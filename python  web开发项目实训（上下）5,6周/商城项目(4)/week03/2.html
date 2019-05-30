@@ -1,0 +1,770 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2. 项目的数据库设计 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.html" />
+    
+    
+    <link rel="prev" href="1.2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    一、Django商城项目开发(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1. 项目需求分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="1.1.html">
+            
+                <a href="1.1.html">
+            
+                    
+                    ①. 项目开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="1.2.html">
+            
+                <a href="1.2.html">
+            
+                    
+                    ②. 商城项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2. 项目的数据库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3. 项目架构的程序设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4. 基于Django框架的项目搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5. 项目实战后台之会员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6. 项目实战后台之管理员登陆与退出
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="6.1.html">
+            
+                <a href="6.1.html">
+            
+                    
+                    ①. 添加中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="6.2.html">
+            
+                <a href="6.2.html">
+            
+                    
+                    ②. 登录与退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="6.3.html">
+            
+                <a href="6.3.html">
+            
+                    
+                    ③. 添加验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7. 项目实战后台之商品类别信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8. 项目实战后台之商品信息管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.1" data-path="8.1.html">
+            
+                <a href="8.1.html">
+            
+                    
+                    ①. 搜索分页浏览商品信息(附加)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week04/">
+            
+                <a href="../week04/">
+            
+                    
+                    二、Django商城项目开发(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week04/1.html">
+            
+                <a href="../week04/1.html">
+            
+                    
+                    9. 项目实战前台搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week04/2.html">
+            
+                <a href="../week04/2.html">
+            
+                    
+                    10. 项目实战前台之会员注册与登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week04/3.html">
+            
+                <a href="../week04/3.html">
+            
+                    
+                    11. 项目实战前台之商品展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week04/4.html">
+            
+                <a href="../week04/4.html">
+            
+                    
+                    12. 项目实战前台之购物车实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week04/5.html">
+            
+                <a href="../week04/5.html">
+            
+                    
+                    13. 项目实战前台之下单操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../week04/6.html">
+            
+                <a href="../week04/6.html">
+            
+                    
+                    14. 项目实战前台之个人中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../week04/7.html">
+            
+                <a href="../week04/7.html">
+            
+                    
+                    15. 项目实战后台之订单处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../week04/8.html">
+            
+                <a href="../week04/8.html">
+            
+                    
+                    16. 项目实战总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../week04/9.html">
+            
+                <a href="../week04/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2. 项目的数据库设计</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="2-&#x9879;&#x76EE;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;">2. &#x9879;&#x76EE;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;</h1>
+<ul>
+<li>&#x53C2;&#x8003;&#x300A;&#x9879;&#x76EE;&#x5EFA;&#x8BAE;&#x4E66;&#x300B;&#x3001;&#x300A;&#x9700;&#x6C42;&#x8BF4;&#x660E;&#x4E66;&#x300B;&#x3001;&#x7528;&#x6237;&#x754C;&#x9762;&#x539F;&#x578B;&#x3001;&#x4EE5;&#x53CA;&#x5404;&#x79CD;&#x6807;&#x51C6;&#x548C;&#x89C4;&#x8303;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<h3 id="1-&#x7ED3;&#x6784;&#x8BBE;&#x8BA1;&#xFF1A;">(1). &#x7ED3;&#x6784;&#x8BBE;&#x8BA1;&#xFF1A;</h3>
+<h4 id="&#x627E;&#x5B9E;&#x4F53;&#xFF1A;">* &#x627E;&#x5B9E;&#x4F53;&#xFF1A;</h4>
+<ul>
+<li>&#x5B9E;&#x4F53;&#x662F;&#x5B9E;&#x4F53;-&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x7684;&#x57FA;&#x672C;&#x5BF9;&#x8C61;,&#x662F;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x4E2D;&#x5404;&#x79CD;&#x4E8B;&#x7269;&#x7684;&#x62BD;&#x8C61;&#x3002;</li>
+<li>&#x51E1;&#x662F;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x533A;  &#x5F00;&#x5E76;&#x53EF;&#x4EE5;&#x88AB;&#x8BC6; &#x7684;&#x4E8B;&#x3001;&#x7269;&#x3001;&#x6982;&#x5FF5;&#x7B49;&#x5BF9;&#x8C61;&#x5747;&#x53EF;&#x8BA4;&#x4E3A;&#x662F;&#x5B9E;&#x4F53;&#x3002;</li>
+<li>&#x57FA;&#x672C;&#x7684;&#x5B9E;&#x4F53;&#x5217;&#x8868;&#x5982;&#x4E0B;:<ul>
+<li>&#x4F1A;&#x5458;</li>
+<li>&#x7C7B;&#x522B;</li>
+<li>&#x5546;&#x54C1;</li>
+<li>&#x8BA2;&#x5355;</li>
+<li>&#x8BA2;&#x5355;&#x8BE6;&#x60C5;</li>
+<li>&#x6536;&#x8D27;&#x5730;&#x5740;</li>
+<li>&#x5546;&#x54C1;&#x8BC4;&#x8BBA;</li>
+<li>&#x5546;&#x54C1;&#x56FE;&#x7247;</li>
+<li>&#x53CB;&#x60C5;&#x94FE;&#x63A5;</li>
+<li>&#x7AD9;&#x5185;&#x516C;&#x544A;</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x627E;&#x5C5E;&#x6027;&#xFF1A;">* &#x627E;&#x5C5E;&#x6027;&#xFF1A;</h4>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x5B9E;&#x4F53;&#x90FD;&#x6709;&#x4E00;&#x7EC4;&#x7279;&#x5F81;&#x6216;&#x6027;&#x8D28;,&#x79F0;&#x4E3A;&#x5B9E;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#x3002;</li>
+<li>&#x5B9E;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x4E3B;&#x8981; &#x6570;&#x636E;,&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x5B9E;&#x9645;&#x4E0A;&#x76F8;&#x5F53;&#x4E8E;&#x8868;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x3002;</li>
+<li>&#x5982;&#x4F1A;&#x5458;&#x5B9E;&#x4F53;&#xFF1A;&#x8D26;&#x53F7;&#x3001;&#x5BC6;&#x7801;&#x3001;&#x771F;&#x5B9E;&#x59D3;&#x540D;&#x3001;&#x6027;&#x522B;&#x3001;&#x5730;&#x5740;&#x3001;&#x90AE;&#x7F16;&#x3001;&#x7535;&#x8BDD;&#x3001;&#x90AE;&#x7BB1;&#x3001;&#x72B6;&#x6001;&#x3001;&#x6CE8;&#x518C;&#x65F6;&#x95F4;</li>
+<li>&#x5546;&#x54C1;&#x5B9E;&#x4F53;&#xFF1A;&#x5546;&#x54C1;&#x540D;&#x79F0;&#x3001;&#x5382;&#x5BB6;&#x3001;&#x7B80;&#x4ECB;&#x3001;&#x5355;&#x4EF7;&#x3001;&#x56FE;&#x7247;&#x3001;&#x72B6;&#x6001;&#x3001;&#x5E93;&#x5B58;&#x91CF;&#x3001;&#x8D2D;&#x4E70;&#x91CF;&#x3001;&#x70B9;&#x51FB;&#x6B21;&#x6570;&#x3001;&#x6DFB;&#x52A0;&#x65F6;&#x95F4;</li>
+<li>... ... </li>
+</ul>
+<h4 id="&#x627E;&#x5173;&#x7CFB;&#xFF1A;">* &#x627E;&#x5173;&#x7CFB;&#xFF1A;</h4>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x5546;&#x54C1;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x7C7B;&#x522B;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x522B;&#x4E0B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x5546;&#x54C1;&#xFF0C;&#x90A3;&#x4E48;&#x7C7B;&#x522B;&#x4E0E;&#x5546;&#x54C1;&#x7684;&#x5173;&#x7CFB;&#x4E3A;&#xFF1A;1:n(1&#x5BF9;&#x591A;&#x5173;&#x7CFB;) </li>
+<li>&#x6BCF;&#x4E2A;&#x8BA2;&#x5355;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x4F1A;&#x5458;&#xFF0C;&#x6BCF;&#x4E2A;&#x4F1A;&#x5458;&#x4E0B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x8BA2;&#x5355;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x5458;&#x4E0E;&#x8BA2;&#x5355;&#x7684;&#x5173;&#x7CFB;&#x4E3A;&#xFF1A;1:n(1&#x5BF9;&#x591A;&#x5173;&#x7CFB;) </li>
+<li>&#x6BCF;&#x4E2A;&#x8BA2;&#x5355;&#x8BE6;&#x60C5;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x8BA2;&#x5355;&#xFF0C;&#x6BCF;&#x4E2A;&#x8BA2;&#x5355;&#x4E0B;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x6761;&#x8D2D;&#x4E70;&#x5546;&#x54C1;&#xFF0C;&#x90A3;&#x4E48;&#x5173;&#x7CFB;&#x4E3A;&#xFF1A;1:n(1&#x5BF9;&#x591A;&#x5173;&#x7CFB;) </li>
+</ul>
+<h4 id="&#x7ED8;&#x5236;e-r&#x56FE;&#xFF1A;">* &#x7ED8;&#x5236;E-R&#x56FE;&#xFF1A;</h4>
+<p><img src="../images/week03/55.png" alt=""></p>
+<h3 id="2-&#x903B;&#x8F91;&#x7ED3;&#x6784;&#x8BBE;&#x8BA1;">(2). &#x903B;&#x8F91;&#x7ED3;&#x6784;&#x8BBE;&#x8BA1;</h3>
+<ul>
+<li>&#x5728;&#x4E0A;&#x9762;&#x5B9E;&#x4F53;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x57FA;&#x7840;&#x4E0A;,&#x5C06;&#x5B9E;&#x4F53;&#x3001;&#x5C5E;&#x6027;&#x548C;&#x5B9E;&#x4F53;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#x8F6C;&#x6362;&#x4E3A;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#x3002;</li>
+</ul>
+<h4 id="&#x786E;&#x5B9A;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#xFF1A;">* &#x786E;&#x5B9A;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;&#xFF1A;</h4>
+<ul>
+<li><p>&#x6839;&#x636E;&#x8F6C;&#x6362;&#x7B97;&#x6CD5;,E-R &#x56FE;&#x4E2D;&#x6709; 5 &#x4E2A;&#x5B9E;&#x4F53;&#x7C7B;&#x578B;,&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x6210; 4 &#x4E2A;&#x5173;&#x7CFB;&#x6A21;&#x5F0F;:</p>
+<p>  1). <code>&#x4F1A;&#x5458;</code>(id&#x53F7;&#x3001;&#x8D26;&#x53F7;&#x3001;&#x5BC6;&#x7801;&#x3001;&#x771F;&#x5B9E;&#x59D3;&#x540D;&#x3001;&#x6027;&#x522B;&#x3001;&#x6536;&#x8D27;&#x5730;&#x5740;&#x3001;&#x90AE;&#x653F;&#x7F16;&#x7801;&#x3001;&#x7535;&#x8BDD;&#x3001;Email&#x3001;&#x72B6;&#x6001;&#x3001;&#x6CE8;&#x518C;&#x65F6;&#x95F4;)</p>
+<p>  2). <code>&#x5546;&#x54C1;&#x7C7B;&#x522B;</code>(&#x7C7B;&#x522B;id&#x53F7;&#xFF0C;&#x7C7B;&#x522B;&#x540D;&#x79F0;&#xFF0C;&#x7236;&#x7C7B;&#x522B;id&#xFF0C;&#x7C7B;&#x522B;&#x8DEF;&#x5F84;)</p>
+<p>  3). <code>&#x5546;&#x54C1;</code>(&#x5546;&#x54C1;id&#x3001;<code>&#x7C7B;&#x522B;id</code>&#x3001;&#x5546;&#x54C1;&#x540D;&#x79F0;&#x3001;&#x751F;&#x4EA7;&#x5382;&#x5BB6;&#x3001;&#x8BE6;&#x60C5;&#x63CF;&#x8FF0;&#x3001;&#x5355;&#x4EF7;&#x3001;&#x56FE;&#x7247;&#x540D;&#x79F0;&#x3001;&#x5E93;&#x5B58;&#x91CF;&#x3001;&#x8D2D;&#x4E70;&#x6570;&#x91CF;&#x3001;&#x70B9;&#x51FB;&#x6B21;&#x6570;&#x3001;&#x72B6;&#x6001;&#x3001;&#x6DFB;&#x52A0;&#x65F6;&#x95F4;)</p>
+<p>  4). <code>&#x8BA2;&#x5355;</code>(&#x8BA2;&#x5355;id&#x53F7;&#x3001;<code>&#x4F1A;&#x5458;id&#x53F7;</code>&#x3001;&#x8054;&#x7CFB;&#x4EBA;&#x3001;&#x6536;&#x8D27;&#x5730;&#x5740;&#x3001;&#x90AE;&#x653F;&#x7F16;&#x7801;&#x3001;&#x8054;&#x7CFB;&#x7535;&#x8BDD;&#x3001;&#x8D2D;&#x4E70;&#x65F6;&#x95F4;&#x3001;&#x603B;&#x91D1;&#x989D;&#x3001;&#x72B6;&#x6001;)</p>
+<p>  5). <code>&#x8BA2;&#x5355;&#x8BE6;&#x60C5;</code>(id&#x53F7;&#x3001;<code>&#x8BA2;&#x5355;id&#x53F7;</code>&#x3001;<code>&#x5546;&#x54C1;id&#x53F7;</code>,&#x5546;&#x54C1;&#x540D;&#x79F0;&#x3001;&#x5355;&#x4EF7;&#x3001;&#x8D2D;&#x4E70;&#x91CF;)</p>
+</li>
+</ul>
+<h4 id="&#x6D88;&#x9664;&#x5197;&#x4F59;&#xFF1A;">* &#x6D88;&#x9664;&#x5197;&#x4F59;&#xFF1A;</h4>
+<ul>
+<li>&#x5197;&#x4F59;&#x6570;&#x636E;&#x548C;&#x5197;&#x4F59;&#x8054;&#x7CFB;&#x5BB9;&#x6613;&#x7834;&#x574F;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B8C;&#x6574;&#x6027;,&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7EF4;&#x62A4;&#x589E;&#x52A0;&#x56F0;&#x96BE;,&#x5E94;&#x5F53;&#x4E88;&#x4EE5;&#x6D88;&#x9664;&#x3002;</li>
+<li>&#x672C;&#x7CFB;&#x7EDF;&#x7684;&#x5197;&#x4F59;&#x6570;&#x636E;&#x548C;&#x5197;&#x4F59;&#x5173;&#x7CFB;&#x5DF2;&#x7ECF;&#x5728;&#x6982;&#x5FF5;&#x7ED3;&#x6784;&#x8BBE;&#x8BA1;&#x4E2D;&#x5904;&#x7406;&#x8FC7;&#x4E86;,&#x8FD9;&#x91CC;&#x4E0D;&#x518D;&#x8FDB;&#x884C;&#x8FC7;&#x591A;&#x7684;&#x53D9;&#x8FF0;&#x3002;</li>
+</ul>
+<h3 id="3-&#x7269;&#x7406;&#x7ED3;&#x679C;&#x8BBE;&#x8BA1;">(3). &#x7269;&#x7406;&#x7ED3;&#x679C;&#x8BBE;&#x8BA1;</h3>
+<ul>
+<li>&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x7684;&#x6700;&#x540E;&#x9636;&#x6BB5;&#x662F;&#x786E;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x5728;&#x7269;&#x7406;&#x8BBE;&#x5907;&#x4E0A;&#x7684;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x548C;&#x5B58;&#x53D6;&#x65B9;&#x6CD5;,&#x5373;&#x7269;&#x7406;&#x6570;&#x636E;&#x6A21;&#x578B;&#x3002;</li>
+<li>&#x7269;&#x7406;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x8BBE;&#x8BA1;&#x5176;&#x5B9E;&#x4E5F;&#x662F;&#x5728;&#x8BBE;&#x8BA1;&#x8868;&#x7ED3;&#x6784;&#x3002;</li>
+<li>&#x4E00;&#x822C;&#x5730;,&#x5B9E;&#x4F53;&#x5BF9;&#x5E94;&#x4E8E;&#x8868;,&#x5B9E;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#x5BF9;&#x5E94;&#x4E8E;&#x8868;&#x7684;&#x5217;(&#x5B57;&#x6BB5;),&#x5B9E;&#x4F53;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x6210;&#x4E3A;&#x8868;&#x7684;&#x7EA6;&#x675F;&#x3002;</li>
+</ul>
+<h4 id="&#x8BBE;&#x8BA1;&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;&#xFF1A;">* &#x8BBE;&#x8BA1;&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;&#xFF1A;</h4>
+<p><img src="../images/week03/b1.png" alt="">
+<img src="../images/week03/b2.png" alt="">
+<img src="../images/week03/b3.png" alt="">
+<img src="../images/week03/b4.png" alt="">
+<img src="../images/week03/b5.png" alt=""></p>
+<h4 id="&#x901A;&#x8FC7;&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;&#x6765;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;">* &#x901A;&#x8FC7;&#x6570;&#x636E;&#x8868;&#x7ED3;&#x6784;&#x6765;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x8868;&#xFF1A;</h4>
+<pre><code class="lang-mysql">-- &#x4F1A;&#x5458;&#x4FE1;&#x606F;&#x8868;&#xFF08;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x5458;&#x4FE1;&#x606F;&#x4E5F;&#x5728;&#x6B64;&#x6807;&#x51C6;&#xFF0C;&#x901A;&#x8FC7;&#x72B6;&#x6001;&#x533A;&#x5206;&#xFF09;
+CREATE TABLE `users`(
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(32) NOT NULL,
+  `name` varchar(16) DEFAULT NULL,
+  `password` char(32) NOT NULL,
+  `sex` tinyint(1) unsigned NOT NULL DEFAULT &apos;1&apos;,
+  `address` varchar(255) DEFAULT NULL,
+  `code` char(6) DEFAULT NULL,
+  `phone` varchar(16) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `state` tinyint(1) unsigned NOT NULL DEFAULT &apos;1&apos;,
+  `addtime` datetime DEFAULT NULL, 
+  PRIMARY KEY (`id`),      
+  UNIQUE KEY `username` (`username`)
+)ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- &#x5546;&#x54C1;&#x7C7B;&#x522B;&#x8868;
+CREATE TABLE `type`(
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) DEFAULT NULL,
+  `pid` int(11) unsigned DEFAULT &apos;0&apos;,
+  `path` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- &#x5546;&#x54C1;&#x4FE1;&#x606F;&#x8868;
+CREATE TABLE `goods`(
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `typeid` int(11) unsigned NOT NULL,
+  `goods` varchar(32) NOT NULL,
+  `company` varchar(50) DEFAULT NULL,
+  `content` text,
+  `price` double(6,2) unsigned NOT NULL,
+  `picname` varchar(255) DEFAULT NULL,
+  `store` int(11) unsigned NOT NULL DEFAULT &apos;0&apos;, 
+  `num` int(11) unsigned NOT NULL DEFAULT &apos;0&apos;,
+  `clicknum` int(11) unsigned NOT NULL DEFAULT &apos;0&apos;,
+  `state` tinyint(1) unsigned NOT NULL DEFAULT &apos;1&apos;,
+  `addtime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `typeid` (`typeid`)
+)ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- &#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x8868;
+CREATE TABLE `orders`(
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(11) unsigned DEFAULT NULL,
+  `linkman` varchar(32) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `code` char(6) DEFAULT NULL,
+  `phone` varchar(16) DEFAULT NULL,
+  `addtime` datetime DEFAULT NULL,
+  `total` double(8,2) unsigned DEFAULT NULL,
+  `state` tinyint(1) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+-- &#x8BA2;&#x5355;&#x4FE1;&#x606F;&#x8BE6;&#x60C5;&#x8868;
+CREATE TABLE `detail`(
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `orderid` int(11) unsigned DEFAULT NULL,
+  `goodsid` int(11) unsigned DEFAULT NULL,
+  `name` varchar(32) DEFAULT NULL,
+  `price` double(6,2) DEFAULT NULL,
+  `num` int(11) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+-- &#x5728;user&#x4E0A;&#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x6761;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;&#x6570;&#x636E;
+insert into users values(null,&apos;admin&apos;,&apos;&#x7BA1;&#x7406;&#x5458;&apos;,md5(&apos;admin&apos;),1,&apos;&#x5317;&#x4EAC;&#x5E02;&#x671D;&#x9633;&#x533A;&#x5927;&#x5C71;&#x5B50;007&#x53F7;&apos;,&apos;100086&apos;,&apos;13566686868&apos;,&apos;122794105@qq.com&apos;,0,now())
+</code></pre>
+<h3 id="4-&#x5B89;&#x5168;&#x4FDD;&#x5BC6;&#x8BBE;&#x8BA1;">(4). &#x5B89;&#x5168;&#x4FDD;&#x5BC6;&#x8BBE;&#x8BA1;</h3>
+<ul>
+<li><p>&#x672C;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x91C7;&#x7528;&#x5B89;&#x5168;&#x7684;&#x7528;&#x6237;&#x540D;&#x52A0;&#x53E3;&#x4EE4;&#x65B9;&#x5F0F;&#x767B;&#x5F55;&#x3002;&#x7528;&#x6237;&#x540D;&#x7684;&#x6743;&#x9650;&#x9650;&#x5236;&#x4E3A;&#x53EA;&#x80FD;&#x8FDB;&#x884C;&#x57FA;&#x672C;&#x7684; &#x589E;&#x5220;&#x6539;&#x67E5;&#x6570;&#x636E;&#x529F;&#x80FD;&#x3002; </p>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x5E94;&#x7528;&#x5BF9;&#x6570;&#x636E;&#x4E00;&#x822C;&#x90FD;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x9650;&#x5236;,&#x8FD9;&#x79CD;&#x9650;&#x5236;&#x79F0;&#x4E3A;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+</li>
+<li><p>&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x5E94;&#x8BE5;&#x4FDD;&#x8BC1;&#x8F93;&#x5165;&#x7684;&#x503C;&#x7B26;&#x5408;&#x5176;&#x89C4;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;,&#x5E76;&#x4FDD;&#x8BC1;&#x503C;&#x5728;&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x7684;&#x8303;&#x56F4;&#x5185;&#x3002;</p>
+</li>
+<li><p>&#x5173;&#x7CFB;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x90FD;&#x652F;&#x6301; 3 &#x79CD;&#x5B8C;&#x6574;&#x6027;:<code>&#x57DF;&#x7EA6;&#x675F;</code>&#x3001;<code>&#x5B9E;&#x4F53;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;</code>&#x548C;<code>&#x5173;&#x8054;&#x5B8C;&#x6574;&#x6027;&#x7EA6;&#x675F;</code>&#x3002;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.2.html" class="navigation navigation-prev " aria-label="Previous page: ②. 商城项目需求分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.html" class="navigation navigation-next " aria-label="Next page: 3. 项目架构的程序设计">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2. 项目的数据库设计","level":"1.3.2","depth":2,"next":{"title":"3. 项目架构的程序设计","level":"1.3.3","depth":2,"path":"week03/3.md","ref":"week03/3.md","articles":[]},"previous":{"title":"②. 商城项目需求分析","level":"1.3.1.2","depth":3,"path":"week03/1.2.md","ref":"week03/1.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week03/2.md","mtime":"2018-04-08T03:32:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-18T02:45:06.907Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

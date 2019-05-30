@@ -1,0 +1,729 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>c. pyquery的使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2.html" />
+    
+    
+    <link rel="prev" href="1.2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    一、Python网络爬虫基础(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/1.html">
+            
+                <a href="../week01/1.html">
+            
+                    
+                    1. Python中的正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/2.html">
+            
+                <a href="../week01/2.html">
+            
+                    
+                    2. 正则表达式基础语法介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/3.html">
+            
+                <a href="../week01/3.html">
+            
+                    
+                    3. 正则表达式中的常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/4.html">
+            
+                <a href="../week01/4.html">
+            
+                    
+                    4. 正则表达式的案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/5.html">
+            
+                <a href="../week01/5.html">
+            
+                    
+                    5. 网络爬虫概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/6.html">
+            
+                <a href="../week01/6.html">
+            
+                    
+                    6. 网络爬虫工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week01/7.html">
+            
+                <a href="../week01/7.html">
+            
+                    
+                    7. 网络爬虫基础使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week01/8.html">
+            
+                <a href="../week01/8.html">
+            
+                    
+                    8. 网络爬虫实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week01/9.html">
+            
+                <a href="../week01/9.html">
+            
+                    
+                    9. 网络爬虫中的异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../week01/10.html">
+            
+                <a href="../week01/10.html">
+            
+                    
+                    10. Urllib3和requests的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../week01/11.html">
+            
+                <a href="../week01/11.html">
+            
+                    
+                    11. GET请求爬取数据实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../week01/12.html">
+            
+                <a href="../week01/12.html">
+            
+                    
+                    12. POST请求爬取数据实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../week01/13a.html">
+            
+                <a href="../week01/13a.html">
+            
+                    
+                    13. 网络爬虫案例实战1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../week01/13b.html">
+            
+                <a href="../week01/13b.html">
+            
+                    
+                    13. 网络爬虫案例实战2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../week01/14.html">
+            
+                <a href="../week01/14.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    二、Python网络爬虫基础(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    14. 解析库的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="1.1.html">
+            
+                <a href="1.1.html">
+            
+                    
+                    a. XPath的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="1.2.html">
+            
+                <a href="1.2.html">
+            
+                    
+                    b. Beautiful Soup的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.1.3" data-path="1.3.html">
+            
+                <a href="1.3.html">
+            
+                    
+                    c. pyquery的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    15. 豆瓣电影Top250信息爬取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    16. 图片信息爬取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    17. Fiddler抓包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    18. 浏览器伪装技术实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    19. Ajax信息爬取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    20. 验证码信息识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    21. 网络爬虫阶段案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >c. pyquery的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="14-3-&#x89E3;&#x6790;&#x5E93;&#x7684;&#x4F7F;&#x7528;--pyquery">14-3. &#x89E3;&#x6790;&#x5E93;&#x7684;&#x4F7F;&#x7528;--PyQuery:</h1>
+<h3 id="&#x2460;-pyquery&#x4ECB;&#x7ECD;&#x4E0E;&#x5B89;&#x88C5;">&#x2460; PyQuery&#x4ECB;&#x7ECD;&#x4E0E;&#x5B89;&#x88C5;</h3>
+<ul>
+<li><p>PyQuery&#x5E93;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x53C8;&#x7075;&#x6D3B;&#x7684;&#x7F51;&#x9875;&#x89E3;&#x6790;&#x5E93;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6709;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x7ECF;&#x9A8C;&#x7684;&#xFF0C;&#x90FD;&#x5E94;&#x8BE5;&#x63A5;&#x89E6;&#x8FC7;jQuery,&#x90A3;&#x4E48;PyQuery&#x5C31;&#x662F;&#x4F60;&#x975E;&#x5E38;&#x7EDD;&#x4F73;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
+</li>
+<li><p>PyQuery &#x662F; Python &#x4EFF;&#x7167; jQuery &#x7684;&#x4E25;&#x683C;&#x5B9E;&#x73B0;&#x3002;</p>
+</li>
+<li><p>&#x8BED;&#x6CD5;&#x4E0E; jQuery &#x51E0;&#x4E4E;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x7528;&#x518D;&#x53BB;&#x8D39;&#x5FC3;&#x53BB;&#x8BB0;&#x4E00;&#x4E9B;&#x5947;&#x602A;&#x7684;&#x65B9;&#x6CD5;&#x4E86;&#x3002;</p>
+</li>
+<li><p>&#x5B98;&#x7F51;&#x5730;&#x5740;&#xFF1A;<a href="http://pyquery.readthedocs.io/en/latest/" target="_blank">http://pyquery.readthedocs.io/en/latest/</a></p>
+</li>
+<li><p>jQuery&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A; <a href="http://jquery.cuishifeng.cn/" target="_blank">http://jquery.cuishifeng.cn/</a></p>
+</li>
+</ul>
+<ul>
+<li>PyQuery&#x7684;&#x5B89;&#x88C5;</li>
+</ul>
+<pre><code>pip install pyquery
+</code></pre><ul>
+<li>URL&#x521D;&#x59CB;&#x5316;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># URL&#x521D;&#x59CB;&#x5316;</span>
+<span class="hljs-keyword">from</span> pyquery <span class="hljs-keyword">import</span> PyQuery <span class="hljs-keyword">as</span> pq
+doc = pq(url=<span class="hljs-string">&quot;http://www.baidu.com&quot;</span>,encoding=<span class="hljs-string">&quot;utf-8&quot;</span>)
+print(doc(<span class="hljs-string">&apos;title&apos;</span>))
+
+<span class="hljs-comment"># &#x6587;&#x4EF6;&#x521D;&#x59CB;&#x5316;</span>
+<span class="hljs-keyword">from</span> pyquery <span class="hljs-keyword">import</span> PyQuery <span class="hljs-keyword">as</span> pq
+doc = pq(filename=<span class="hljs-string">&apos;my.html&apos;</span>,encoding=<span class="hljs-string">&quot;utf-8&quot;</span>)
+print(doc(<span class="hljs-string">&apos;title&apos;</span>))
+<span class="hljs-string">&apos;&apos;&apos;
+
+# &#x63A8;&#x8350;&#x4F7F;&#x7528;requests&#x722C;&#x53D6;&#x4FE1;&#x606F;
+from pyquery import PyQuery as pq
+import requests
+res = requests.get(&quot;http://www.baidu.com&quot;)
+res.encoding = &quot;utf-8&quot; #&#x56E0;&#x4E3A;&#x539F;&#x7F16;&#x7801;&#x4E3A;ISO-8859-1
+#print(res.text)
+doc = pq(res.text)
+print(doc(&quot;title&quot;))
+</span></code></pre>
+<h3 id="&#x2461;-pyquery&#x7684;&#x4F7F;&#x7528;">&#x2461; PyQuery&#x7684;&#x4F7F;&#x7528;</h3>
+<pre><code class="lang-python">
+<span class="hljs-comment"># &#x8BFB;&#x53D6;my.html&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;pyquery&#x6765;&#x67E5;&#x627E;&#x8282;&#x70B9;</span>
+<span class="hljs-keyword">from</span> pyquery <span class="hljs-keyword">import</span> PyQuery <span class="hljs-keyword">as</span> pq
+
+doc = pq(filename=<span class="hljs-string">&apos;my.html&apos;</span>,encoding=<span class="hljs-string">&quot;utf-8&quot;</span>)
+
+print(doc(<span class="hljs-string">&apos;title&apos;</span>)) <span class="hljs-comment">#&#x901A;&#x8FC7;html&#x6807;&#x7B7E;&#x540D;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x8282;&#x70B9;</span>
+print(doc(<span class="hljs-string">&apos;#hid&apos;</span>))  <span class="hljs-comment">#&#x83B7;&#x53D6;id&#x5C5E;&#x6027;&#x503C;&#x4E3A;hid&#x7684;&#x5143;&#x7D20;&#x8282;&#x70B9;</span>
+print(doc(<span class="hljs-string">&apos;.bb&apos;</span>))  <span class="hljs-comment">#&#x83B7;&#x53D6;class&#x5C5E;&#x6027;&#x503C;&#x4E3A;bb&#x7684;&#x5143;&#x7D20;&#x8282;&#x70B9;</span>
+print(doc(<span class="hljs-string">&apos;title,h3&apos;</span>)) <span class="hljs-comment">#&#x9009;&#x62E9;&#x7B26;&#x7EC4;&#x7684;&#x4F7F;&#x7528;</span>
+
+print(doc(<span class="hljs-string">&quot;ul li.shop a&quot;</span>)) <span class="hljs-comment">#&#x5173;&#x8054;&#x9009;&#x62E9;&#x7B26;&#x7684;&#x4F7F;&#x7528;</span>
+
+print(doc(<span class="hljs-string">&quot;a&quot;</span>)) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x6240;&#x6709;a</span>
+print(doc(<span class="hljs-string">&quot;a:first&quot;</span>)) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x7B2C;&#x4E00;&#x4E2A;a</span>
+print(doc(<span class="hljs-string">&quot;a:last&quot;</span>)) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x4E2A;a</span>
+print(doc(<span class="hljs-string">&quot;a:lt(2)&quot;</span>)) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x524D;&#x8FDE;&#x4E2A;a</span>
+print(doc(<span class="hljs-string">&quot;a:eq(2)&quot;</span>)) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x7D22;&#x5F15;&#x4F4D;&#x7F6E;2&#x7684;a&#xFF08;&#x7B2C;&#x4E09;&#x4E2A;&#xFF09;</span>
+
+print(doc(<span class="hljs-string">&apos;a[href=&quot;http://www.sina.com&quot;]&apos;</span>)) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x503C;&#x7684;&#x8282;&#x70B9;</span>
+
+print(<span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">60</span>)
+<span class="hljs-comment"># &#x8282;&#x70B9;&#x7684;&#x4E8C;&#x6B21;&#x7B5B;&#x9009;&#xFF1A;</span>
+
+lilist = doc(<span class="hljs-string">&quot;ul li&quot;</span>) <span class="hljs-comment">#&#x83B7;&#x53D6;ul&#x4E2D;&#x6240;&#x6709;&#x7684;li</span>
+print(type(lilist)) <span class="hljs-comment">#&lt;class &apos;pyquery.pyquery.PyQuery&apos;&gt;</span>
+print(lilist.find(<span class="hljs-string">&quot;a.bb&quot;</span>)) <span class="hljs-comment">#&#x5728;&#x7ED3;&#x679C;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x518D;&#x6B21;&#x67E5;&#x627E;</span>
+print(lilist.children(<span class="hljs-string">&quot;a.bb&quot;</span>)) <span class="hljs-comment">#&#x5728;&#x7ED3;&#x679C;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x518D;&#x6B21;&#x67E5;&#x627E;</span>
+
+print(doc(<span class="hljs-string">&quot;a.bb&quot;</span>).parent()) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x76F4;&#x63A5;&#x7236;&#x8282;&#x70B9;</span>
+<span class="hljs-comment">#print(doc(&quot;a.bb&quot;).parents()) #&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x7236;&#x8282;&#x70B9;</span>
+print(doc(<span class="hljs-string">&quot;a.bb&quot;</span>).parent().siblings()) <span class="hljs-comment">#&#x83B7;&#x53D6;&#x5144;&#x5F1F;&#x8282;&#x70B9;</span>
+
+print(<span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">60</span>)
+<span class="hljs-comment"># &#x904D;&#x5386;&#xFF1A;</span>
+
+alist = doc(<span class="hljs-string">&quot;a&quot;</span>)
+<span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> alist.items():
+    print(a.attr.href)
+    <span class="hljs-comment">#print(a.attr(&apos;href&apos;)) #&#x540C;&#x4E0A;</span>
+    print(a.text())  <span class="hljs-comment">#&#x83B7;&#x53D6;&#x5185;&#x5BB9;</span>
+    print(a.html()) 
+
+
+<span class="hljs-comment">#&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x5177;&#x4F53;&#x53C2;&#x8003;&#x624B;&#x518C;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.2.html" class="navigation navigation-prev " aria-label="Previous page: b. Beautiful Soup的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2.html" class="navigation navigation-next " aria-label="Next page: 15. 豆瓣电影Top250信息爬取实战">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"c. pyquery的使用","level":"1.4.1.3","depth":3,"next":{"title":"15. 豆瓣电影Top250信息爬取实战","level":"1.4.2","depth":2,"path":"week02/2.md","ref":"week02/2.md","articles":[]},"previous":{"title":"b. Beautiful Soup的使用","level":"1.4.1.2","depth":3,"path":"week02/1.2.md","ref":"week02/1.2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week02/1.3.md","mtime":"2018-05-01T00:58:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-10T07:04:13.061Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

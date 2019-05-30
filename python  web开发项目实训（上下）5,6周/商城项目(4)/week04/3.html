@@ -1,0 +1,847 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11. 项目实战前台之商品展示 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4.html" />
+    
+    
+    <link rel="prev" href="2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    一、Django商城项目开发(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week03/1.html">
+            
+                <a href="../week03/1.html">
+            
+                    
+                    1. 项目需求分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../week03/1.1.html">
+            
+                <a href="../week03/1.1.html">
+            
+                    
+                    ①. 项目开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../week03/1.2.html">
+            
+                <a href="../week03/1.2.html">
+            
+                    
+                    ②. 商城项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week03/2.html">
+            
+                <a href="../week03/2.html">
+            
+                    
+                    2. 项目的数据库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week03/3.html">
+            
+                <a href="../week03/3.html">
+            
+                    
+                    3. 项目架构的程序设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week03/4.html">
+            
+                <a href="../week03/4.html">
+            
+                    
+                    4. 基于Django框架的项目搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week03/5.html">
+            
+                <a href="../week03/5.html">
+            
+                    
+                    5. 项目实战后台之会员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week03/6.html">
+            
+                <a href="../week03/6.html">
+            
+                    
+                    6. 项目实战后台之管理员登陆与退出
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../week03/6.1.html">
+            
+                <a href="../week03/6.1.html">
+            
+                    
+                    ①. 添加中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../week03/6.2.html">
+            
+                <a href="../week03/6.2.html">
+            
+                    
+                    ②. 登录与退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../week03/6.3.html">
+            
+                <a href="../week03/6.3.html">
+            
+                    
+                    ③. 添加验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week03/7.html">
+            
+                <a href="../week03/7.html">
+            
+                    
+                    7. 项目实战后台之商品类别信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week03/8.html">
+            
+                <a href="../week03/8.html">
+            
+                    
+                    8. 项目实战后台之商品信息管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.1" data-path="../week03/8.1.html">
+            
+                <a href="../week03/8.1.html">
+            
+                    
+                    ①. 搜索分页浏览商品信息(附加)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week03/9.html">
+            
+                <a href="../week03/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    二、Django商城项目开发(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    9. 项目实战前台搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    10. 项目实战前台之会员注册与登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    11. 项目实战前台之商品展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    12. 项目实战前台之购物车实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    13. 项目实战前台之下单操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    14. 项目实战前台之个人中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    15. 项目实战后台之订单处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    16. 项目实战总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11. 项目实战前台之商品展示</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="11-&#x9879;&#x76EE;&#x5B9E;&#x6218;&#x524D;&#x53F0;&#x4E4B;&#x5546;&#x54C1;&#x5C55;&#x793A;">11. &#x9879;&#x76EE;&#x5B9E;&#x6218;&#x524D;&#x53F0;&#x4E4B;&#x5546;&#x54C1;&#x5C55;&#x793A;</h1>
+<ul>
+<li><p>&#x672C;&#x8282;&#x5C06;&#x5B9E;&#x73B0;&#x5546;&#x57CE;&#x9879;&#x76EE;&#x524D;&#x53F0;&#xFF1A;&#x5206;&#x7C7B;&#x5BFC;&#x822A;&#x3001;&#x5546;&#x54C1;&#x5217;&#x8868;&#x548C;&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x7684;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#xFF0C;&#x5173;&#x4E8E;&#x5546;&#x57CE;&#x9996;&#x9875;&#x7684;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5C55;&#x793A;&#x5C06;&#x4F1A;&#x5728;&#x9879;&#x76EE;&#x7684;&#x540E;&#x671F;&#x5B8C;&#x6210;&#x3002;</p>
+</li>
+<li><p>&#x5206;&#x7C7B;&#x5BFC;&#x822A;&#xFF1A;&#x5C06;&#x5546;&#x54C1;&#x7684;&#x4E00;&#x7EA7;&#x7C7B;&#x522B;&#x4FE1;&#x606F;&#x4F5C;&#x4E3A;&#x9875;&#x9762;&#x7684;&#x5BFC;&#x822A;&#x94FE;&#x63A5;&#x4FE1;&#x606F;&#x663E;&#x793A;</p>
+</li>
+</ul>
+<p><img src="../images/week04/menu.png" alt=""></p>
+<ul>
+<li>&#x5546;&#x54C1;&#x5217;&#x8868;&#xFF1A;&#x5728;<code>/list</code>&#x6216;<code>/list/&#x9875;&#x53F7;</code>&#x8BF7;&#x6C42;&#x4E2D;&#x5206;&#x7C7B;&#x5206;&#x9875;&#x5C55;&#x793A;&#x5546;&#x54C1;&#x4FE1;&#x606F;</li>
+</ul>
+<p><img src="../images/week04/shoplist.png" alt=""></p>
+<ul>
+<li>&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#xFF1A;&#x5728;<code>/detail/gid&#x53F7;</code>&#x8BF7;&#x6C42;&#x4E2D;&#x5C55;&#x793A;&#x6307;&#x5B9A;&#x5546;&#x54C1;id&#x53F7;&#x7684;&#x5546;&#x54C1;&#x4FE1;&#x606F;</li>
+</ul>
+<p><img src="../images/week04/shopdetail.png" alt=""></p>
+<ul>
+<li>&#x5546;&#x57CE;&#x9996;&#x9875;&#xFF1A;&#x8F93;&#x51FA;&#x90E8;&#x5206;&#x6700;&#x65B0;&#x5546;&#x54C1;&#x3001;&#x70ED;&#x5356;&#x5546;&#x54C1;&#x3001;&#x63A8;&#x8350;&#x5546;&#x54C1;&#x6216;&#x70B9;&#x51FB;&#x91CF;&#x6700;&#x9AD8;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x7531;&#x4E8E;&#x76EE;&#x524D;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x4E0D;&#x5B8C;&#x5584;&#xFF0C;&#x6545;&#x540E;&#x671F;&#x5B8C;&#x6210;&#x3002;</li>
+</ul>
+<p><img src="../images/week04/showindex.png" alt=""></p>
+<h3 id="1-&#x9879;&#x76EE;urls&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x914D;&#x7F6E;">(1). &#x9879;&#x76EE;urls&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x914D;&#x7F6E;</h3>
+<ul>
+<li><p>&#x5728;&#x6570;&#x636E;&#x5E93; <code>shopdb</code> &#x4E2D;&#x5DF2;&#x5B58;&#x5728;&#x6570;&#x636E;&#x8868;<code>goods</code>&#x548C;<code>type</code>&#xFF0C;&#x5E76;&#x4E14;&#x5185;&#x6709;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x3002;</p>
+</li>
+<li><p>&#x5728;common&#x5E94;&#x7528;&#x76EE;&#x5F55;&#x4E2D;&#x7684;<code>myobject/common/models.py</code> &#x6A21;&#x578B;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5DF2;&#x5B58;&#x5728;<code>Goods</code>&#x548C;<code>Types</code>&#x6A21;&#x578B;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+</li>
+<li><p>&#x6253;&#x5F00;&#x6839;&#x8DEF;&#x7531;&#x6587;&#x4EF6;&#xFF1A;myobject/web/urls.py&#x8DEF;&#x7531;&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x8F91;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+</li>
+</ul>
+<pre><code class="lang-python">
+<span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+
+<span class="hljs-keyword">from</span> web.views <span class="hljs-keyword">import</span> index
+
+urlpatterns = [
+    <span class="hljs-comment">#&#x7F51;&#x7AD9;&#x524D;&#x53F0;</span>
+    url(<span class="hljs-string">r&apos;^$&apos;</span>,index.index,name=<span class="hljs-string">&quot;index&quot;</span>), <span class="hljs-comment">#&#x9996;&#x9875;</span>
+    url(<span class="hljs-string">r&apos;^list$&apos;</span>,index.lists,name=<span class="hljs-string">&quot;list&quot;</span>), <span class="hljs-comment">#&#x5546;&#x54C1;&#x5217;&#x8868;&#x5C55;&#x793A;</span>
+    <span class="hljs-comment">#url(r&apos;^list/(?P&lt;pIndex&gt;[0-9]+)$&apos;,index.lists,name=&quot;list&quot;), #&#x5206;&#x9875;&#x5546;&#x54C1;&#x5217;&#x8868;&#x5C55;&#x793A;</span>
+    url(<span class="hljs-string">r&apos;^detail/(?P&lt;gid&gt;[0-9]+)$&apos;</span>,index.detail,name=<span class="hljs-string">&quot;detail&quot;</span>), <span class="hljs-comment">#&#x5546;&#x54C1;&#x8BE6;&#x60C5;</span>
+
+    <span class="hljs-comment"># &#x4F1A;&#x5458;&#x53CA;&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;&#x7B49;&#x8DEF;&#x7531;&#x914D;&#x7F6E;</span>
+    url(<span class="hljs-string">r&apos;^login$&apos;</span>, index.login, name=<span class="hljs-string">&quot;login&quot;</span>),
+    url(<span class="hljs-string">r&apos;^dologin$&apos;</span>, index.dologin, name=<span class="hljs-string">&quot;dologin&quot;</span>),
+    url(<span class="hljs-string">r&apos;^logout$&apos;</span>, index.logout, name=<span class="hljs-string">&quot;logout&quot;</span>),
+
+]
+</code></pre>
+<h3 id="&#x3000;2&#x3000;&#x7F16;&#x8F91;&#x89C6;&#x56FE;&#x6587;&#x4EF6;">&#x3000;(2).&#x3000;&#x7F16;&#x8F91;&#x89C6;&#x56FE;&#x6587;&#x4EF6;</h3>
+<ul>
+<li>&#x65B0;&#x5EFA;&#x89C6;&#x56FE;&#x6587;&#x4EF6;&#xFF1A;myobject/web/views/index.py &#x89C6;&#x56FE;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x7F16;&#x8F91;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> django.http <span class="hljs-keyword">import</span> HttpResponse
+<span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect
+<span class="hljs-keyword">from</span> django.core.urlresolvers <span class="hljs-keyword">import</span> reverse
+<span class="hljs-keyword">from</span> django.core.paginator <span class="hljs-keyword">import</span> Paginator
+
+<span class="hljs-keyword">from</span> common.models <span class="hljs-keyword">import</span> Users,Types,Goods
+
+<span class="hljs-comment"># &#x516C;&#x5171;&#x4FE1;&#x606F;&#x52A0;&#x8F7D;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">loadinfo</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x516C;&#x5171;&#x4FE1;&#x606F;&#x52A0;&#x8F7D;&apos;&apos;&apos;</span>
+    context = {}
+    lists = Types.objects.filter(pid=<span class="hljs-number">0</span>)
+    context[<span class="hljs-string">&apos;typelist&apos;</span>] = lists
+    <span class="hljs-keyword">return</span> context
+
+<span class="hljs-comment"># =============&#x5546;&#x54C1;&#x5C55;&#x793A;========================</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">index</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x9879;&#x76EE;&#x524D;&#x53F0;&#x9996;&#x9875;&apos;&apos;&apos;</span>
+    context = loadinfo(request)
+    <span class="hljs-keyword">return</span> render(request,<span class="hljs-string">&quot;web/index.html&quot;</span>,context)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">lists</span><span class="hljs-params">(request,pIndex=<span class="hljs-number">1</span>)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x5546;&#x54C1;&#x5217;&#x8868;&#x9875;(&#x641C;&#x7D22;&amp;&#x5206;&#x9875;)&apos;&apos;&apos;</span>
+    context = loadinfo(request)
+    <span class="hljs-comment">#&#x83B7;&#x53D6;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;</span>
+    mod = Goods.objects
+    mywhere=[] <span class="hljs-comment">#&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x641C;&#x7D22;&#x6761;&#x4EF6;&#x5217;&#x8868;</span>
+
+    <span class="hljs-comment">#&#x5224;&#x65AD;&#x6DFB;&#x52A0;&#x641C;&#x7D22;&#x6761;&#x4EF6;</span>
+    tid = int(request.GET.get(<span class="hljs-string">&apos;tid&apos;</span>,<span class="hljs-number">0</span>))
+    <span class="hljs-keyword">if</span> tid &gt; <span class="hljs-number">0</span>:
+        list = mod.filter(typeid__in=Types.objects.only(<span class="hljs-string">&apos;id&apos;</span>).filter(pid=tid))
+        mywhere.append(<span class="hljs-string">&quot;tid=&quot;</span>+str(tid))
+    <span class="hljs-keyword">else</span>:
+        list = mod.filter()
+
+    <span class="hljs-comment">#&#x83B7;&#x53D6;&#x3001;&#x5224;&#x65AD;&#x5E76;&#x5C01;&#x88C5;&#x5173;keyword&#x952E;&#x641C;&#x7D22;</span>
+    kw = request.GET.get(<span class="hljs-string">&quot;keyword&quot;</span>,<span class="hljs-keyword">None</span>)
+    <span class="hljs-keyword">if</span> kw:
+        <span class="hljs-comment"># &#x67E5;&#x8BE2;&#x5546;&#x54C1;&#x540D;&#x4E2D;&#x53EA;&#x8981;&#x542B;&#x6709;&#x5173;&#x952E;&#x5B57;&#x7684;&#x90FD;&#x53EF;&#x4EE5;</span>
+        list = list.filter(goods__contains=kw)
+        mywhere.append(<span class="hljs-string">&quot;keyword=&quot;</span>+kw)
+
+    <span class="hljs-comment">#&#x6267;&#x884C;&#x5206;&#x9875;&#x5904;&#x7406;</span>
+    pIndex = int(pIndex)
+    page = Paginator(list,<span class="hljs-number">5</span>) <span class="hljs-comment">#&#x4EE5;5&#x6761;&#x6BCF;&#x9875;&#x521B;&#x5EFA;&#x5206;&#x9875;&#x5BF9;&#x8C61;</span>
+    maxpages = page.num_pages <span class="hljs-comment">#&#x6700;&#x5927;&#x9875;&#x6570;</span>
+    <span class="hljs-comment">#&#x5224;&#x65AD;&#x9875;&#x6570;&#x662F;&#x5426;&#x8D8A;&#x754C;</span>
+    <span class="hljs-keyword">if</span> pIndex &gt; maxpages:
+        pIndex = maxpages
+    <span class="hljs-keyword">if</span> pIndex &lt; <span class="hljs-number">1</span>:
+        pIndex = <span class="hljs-number">1</span>
+    list2 = page.page(pIndex) <span class="hljs-comment">#&#x5F53;&#x524D;&#x9875;&#x6570;&#x636E;</span>
+    plist = page.page_range   <span class="hljs-comment">#&#x9875;&#x7801;&#x6570;&#x5217;&#x8868;</span>
+
+    <span class="hljs-comment">#&#x5C01;&#x88C5;&#x4FE1;&#x606F;&#x52A0;&#x8F7D;&#x6A21;&#x677F;&#x8F93;&#x51FA;</span>
+    context[<span class="hljs-string">&apos;goodslist&apos;</span>] = list2
+    context[<span class="hljs-string">&apos;plist&apos;</span>] = plist
+    context[<span class="hljs-string">&apos;pIndex&apos;</span>] = pIndex
+    context[<span class="hljs-string">&apos;maxpages&apos;</span>] = maxpages
+    context[<span class="hljs-string">&apos;mywhere&apos;</span>] = mywhere
+    context[<span class="hljs-string">&apos;tid&apos;</span>] = int(tid)
+    <span class="hljs-keyword">return</span> render(request,<span class="hljs-string">&quot;web/list.html&quot;</span>,context)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">detail</span><span class="hljs-params">(request,gid)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;&apos;&apos;&apos;</span>
+    context = loadinfo(request)
+    <span class="hljs-comment">#&#x52A0;&#x8F7D;&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;</span>
+    ob = Goods.objects.get(id=gid)
+    ob.clicknum += <span class="hljs-number">1</span> <span class="hljs-comment"># &#x70B9;&#x51FB;&#x91CF;&#x52A0;1</span>
+    ob.save()
+    context[<span class="hljs-string">&apos;goods&apos;</span>] = ob
+    <span class="hljs-keyword">return</span> render(request,<span class="hljs-string">&quot;web/detail.html&quot;</span>,context)
+
+<span class="hljs-comment"># ==============&#x524D;&#x53F0;&#x4F1A;&#x5458;&#x767B;&#x5F55;====================</span>
+<span class="hljs-comment"># &#x7565;(&#x4E0A;&#x8282;&#x4E2D;&#x5DF2;&#x7F16;&#x5199;)... ...</span>
+</code></pre>
+<h3 id="3-&#x7F16;&#x5199;&#x6A21;&#x677F;&#x6587;&#x4EF6;">(3). &#x7F16;&#x5199;&#x6A21;&#x677F;&#x6587;&#x4EF6;</h3>
+<ul>
+<li>3.1. &#x6253;&#x5F00;&#x7236;&#x7C7B;&#x6A21;&#x677F;&#xFF1A;/templates/web/base.html &#xFF0C;&#x7F16;&#x8F91;&#x5BFC;&#x822A;&#x680F;&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code class="lang-html">    ...
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav navbar-nav navbar-right layout-header-nav clearfix&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;index&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-link&quot;</span>&gt;</span>&#x7F51;&#x7AD9;&#x9996;&#x9875;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line-top hidden-xs&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;list&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-link&quot;</span>&gt;</span>&#x5168;&#x90E8;&#x5546;&#x54C1;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+
+        {% for type in typelist %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-item&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;list&apos; %}?tid={{ type.id }}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-link&quot;</span>&gt;</span>{{ type.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        {% endfor %}
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-item&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-nav-link&quot;</span>&gt;</span>&#x793E;&#x533A;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>                          
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>     
+    ...
+</code></pre>
+<ul>
+<li>3.2. &#x5546;&#x54C1;&#x5217;&#x8868;&#x4FE1;&#x606F;&#x663E;&#x793A;&#x6A21;&#x677F;&#xFF1A;/templates/web/list.html</li>
+</ul>
+<pre><code class="lang-html">...
+      <span class="hljs-comment">&lt;!-- &#x5546;&#x54C1;&#x5217;&#x8868; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;goods-list&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+         {% for goods in goodslist %}
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-3 col-sm-6 col-xs-6&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;gl-item&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;compare-btn-list&quot;</span> &gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont  icon-duibi compare-duibi&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hidden-xs hidden-sm&quot;</span>&gt;</span>&#x5BF9;&#x6BD4;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;gl-item-wrap&quot;</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Tab panes --&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-content&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tabpanel&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tab-pane active mod-pic&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;list-p1&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;detail&apos; goods.id %}&quot;</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lazy j-modProduct&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/static/goods/m_{{ goods.picname }}&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;220&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;220&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-comment">&lt;!-- Nav tabs --&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item-slide j-pro-wrap  hidden-xs hidden-sm&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nav nav-tabs  &quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tablist&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;presentation&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active&quot;</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#list-p1&quot;</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;list-p1&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;tab&quot;</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">&quot;tab&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lazy&quot;</span>  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/static/goods/s_{{ goods.picname }}&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: inline;&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;40&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;40&quot;</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;slide-btn j-modBtns&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display: none;&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;prev iconfont disabled&quot;</span>&gt;</span>&#xE65B;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;next iconfont&quot;</span>&gt;</span>&#xE659;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ goods.goods}}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;red&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&#x53CC;11&#x4FC3;&#x9500;&#xFF1A;&#x6EE1;500&#xFF0C;&#x51CF;100&#xFF01;&quot;</span>&gt;</span>
+                &#x53CC;11&#x4FC3;&#x9500;&#xFF1A;&#x6EE1;500&#xFF0C;&#x51CF;100&#xFF01;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mod-price&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#xFFE5;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vm-price&quot;</span>&gt;</span>{{ goods.price }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vm-start&quot;</span>&gt;</span>&#x8D77;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         {% endfor %}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x5546;&#x54C1;&#x5217;&#x8868; --&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Page navigation&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-center&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;pagination&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;list&apos; pIndex|add:-1 %}?{{ mywhere|join:&apos;&amp;&apos; }}&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Previous&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>&amp;laquo;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          {% for p in plist %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> {% <span class="hljs-attr">if</span> <span class="hljs-attr">pIndex</span> =<span class="hljs-string">=</span> <span class="hljs-attr">p</span> %}<span class="hljs-attr">class</span>=<span class="hljs-string">&quot;active&quot;</span><span class="hljs-string">{%</span> <span class="hljs-attr">endif</span> %}&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;list&apos; p %}?{{ mywhere|join:&apos;&amp;&apos; }}&quot;</span>&gt;</span>{{p}}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          {% endfor %}
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;list&apos; pIndex|add:1 %}?{{ mywhere|join:&apos;&amp;&apos; }}&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Next&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>&amp;raquo;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+...
+</code></pre>
+<ul>
+<li>3.3. &#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;&#x663E;&#x793A;&#x6A21;&#x677F;&#xFF1A;/templates/web/detail.html</li>
+</ul>
+<pre><code class="lang-html">    &#x5728;&#x8BE6;&#x60C5;&#x6A21;&#x677F;&#x4E2D;&#x8F93;&#x51FA;&#x90E8;&#x5206;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x5373;&#x53EF;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2.html" class="navigation navigation-prev " aria-label="Previous page: 10. 项目实战前台之会员注册与登陆">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4.html" class="navigation navigation-next " aria-label="Next page: 12. 项目实战前台之购物车实战">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11. 项目实战前台之商品展示","level":"1.4.3","depth":2,"next":{"title":"12. 项目实战前台之购物车实战","level":"1.4.4","depth":2,"path":"week04/4.md","ref":"week04/4.md","articles":[]},"previous":{"title":"10. 项目实战前台之会员注册与登陆","level":"1.4.2","depth":2,"path":"week04/2.md","ref":"week04/2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week04/3.md","mtime":"2018-04-18T03:48:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-18T02:45:06.907Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

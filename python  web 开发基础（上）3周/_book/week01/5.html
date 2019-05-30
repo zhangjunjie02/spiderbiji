@@ -1,0 +1,495 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.5 CSS的常用选择符 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.html" />
+    
+    
+    <link rel="prev" href="4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一周:Web前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1.1 Web前端开发介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    1.2 HTML基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    1.3 HTML常用标签介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    1.4 CSS层叠样式表介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    1.5 CSS的常用选择符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    1.6 CSS常用属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    1.7 网页布局实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    1.8 JavaScript语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    1.9 jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    1.10 BootStrap案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.5 CSS的常用选择符</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="15-css&#x7684;&#x5E38;&#x7528;&#x9009;&#x62E9;&#x7B26;">1.5 CSS&#x7684;&#x5E38;&#x7528;&#x9009;&#x62E9;&#x7B26;</h1>
+<h3 id="151-css2&#x7684;&#x9009;&#x62E9;&#x7B26;&#x91CD;&#x8981;">1.5.1 css2&#x7684;&#x9009;&#x62E9;&#x7B26;(&#x91CD;&#x8981;)</h3>
+<p>(1). html&#x9009;&#x62E9;&#x7B26;&#xFF08;&#x6807;&#x7B7E;&#x9009;&#x62E9;&#x5668;&#xFF09;</p>
+<pre><code>&#x5C31;&#x662F;&#x628A;html&#x6807;&#x7B7E;&#x4F5C;&#x4E3A;&#x9009;&#x62E9;&#x7B26;&#x4F7F;&#x7528;
+&#x5982; p{....}  &#x7F51;&#x9875;&#x4E2D;&#x6240;&#x6709;p&#x6807;&#x7B7E;&#x91C7;&#x7528;&#x6B64;&#x6837;&#x5F0F;
+h2{....}  &#x7F51;&#x9875;&#x4E2D;&#x6240;&#x6709;h2&#x6807;&#x7B7E;&#x91C7;&#x7528;&#x6B64;&#x6837;&#x5F0F;
+</code></pre><p>(2). class&#x7C7B;&#x9009;&#x62E9;&#x7B26; (&#x4F7F;&#x7528;&#x70B9;.&#x5C06;&#x81EA;&#x5B9A;&#x4E49;&#x540D;&#xFF08;&#x7C7B;&#x540D;&#xFF09;&#x6765;&#x5B9A;&#x4E49;&#x7684;&#x9009;&#x62E9;&#x7B26;)</p>
+<pre><code>&#x5B9A;&#x4E49;&#xFF1A;  .&#x7C7B;&#x540D;{&#x6837;&#x5F0F;....}    &#x533F;&#x540D;&#x7C7B;
+&#x5176;&#x4ED6;&#x9009;&#x62E9;&#x7B26;&#x540D;.&#x7C7B;&#x540D;{&#x6837;&#x5F0F;....}
+&#x4F7F;&#x7528;&#xFF1A;&lt;html&#x6807;&#x7B7E; class=&quot;&#x7C7B;&#x540D;&quot;&gt;...&lt;/html&#x6807;&#x7B7E;&gt;        
+.mc{color:blue;} /* &#x51E1;&#x662F;class&#x5C5E;&#x6027;&#x503C;&#x4E3A;mc&#x7684;&#x90FD;&#x91C7;&#x7528;&#x6B64;&#x6837;&#x5F0F; */
+p.ps{color:green;}  /*&#x53EA;&#x6709;p&#x6807;&#x7B7E;&#x4E2D;class&#x5C5E;&#x6027;&#x503C;&#x4E3A;ps&#x7684;&#x624D;&#x91C7;&#x7528;&#x6B64;&#x6837;&#x5F0F;*/
+&#x6CE8;&#x610F;&#xFF1A;&#x7C7B;&#x9009;&#x62E9;&#x7B26;&#x53EF;&#x4EE5;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x91CD;&#x590D;&#x4F7F;&#x7528;
+</code></pre><p>(3). Id&#x9009;&#x62E9;&#x7B26;:</p>
+<pre><code>&#x5B9A;&#x4E49;&#xFF1A; #id&#x540D;{&#x6837;&#x5F0F;.....}
+&#x4F7F;&#x7528;&#xFF1A;&lt;html&#x6807;&#x7B7E; id=&quot;id&#x540D;&quot;&gt;...&lt;/html&#x6807;&#x7B7E;&gt;
+&#x6CE8;&#x610F;&#xFF1A;id&#x9009;&#x62E9;&#x7B26;&#x53EA;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x4F7F;&#x7528;&#x4E00;&#x6B21;.
+</code></pre><ul>
+<li>&#x9009;&#x62E9;&#x7B26;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF1A;&#x4ECE;&#x5927;&#x5230;&#x5C0F; [ID&#x9009;&#x62E9;&#x7B26;]-&gt;[class&#x9009;&#x62E9;&#x7B26;]-&gt;[html&#x9009;&#x62E9;&#x7B26;]-&gt;[html&#x5C5E;&#x6027;]</li>
+</ul>
+<p>(4). &#x5173;&#x8054;&#x9009;&#x62E9;&#x7B26;&#xFF08;&#x5305;&#x542B;&#x9009;&#x62E9;&#x7B26;&#xFF09;</p>
+<ul>
+<li>&#x683C;&#x5F0F;&#xFF1A; <code>&#x9009;&#x62E9;&#x7B26;1 &#x9009;&#x62E9;&#x7B26;2 &#x9009;&#x62E9;&#x7B26;3 ...{&#x6837;&#x5F0F;....}</code><pre><code class="lang-css">table a{....} /*table&#x6807;&#x7B7E;&#x91CC;&#x7684;a&#x6807;&#x7B7E;&#x624D;&#x91C7;&#x7528;&#x6B64;&#x6837;&#x5F0F;*/
+h1 p{color:red} /*&#x53EA;&#x6709;h1&#x6807;&#x7B7E;&#x4E2D;&#x7684;p&#x6807;&#x7B7E;&#x624D;&#x91C7;&#x7528;&#x6B64;&#x6837;&#x5F0F;*/
+</code></pre>
+</li>
+</ul>
+<p>(5). &#x7EC4;&#x5408;&#x9009;&#x62E9;&#x7B26;&#xFF08;&#x9009;&#x62E9;&#x7B26;&#x7EC4;&#xFF09;</p>
+<ul>
+<li>&#x683C;&#x5F0F;&#xFF1A; <code>&#x9009;&#x62E9;&#x7B26;1,&#x9009;&#x62E9;&#x7B26;2,&#x9009;&#x62E9;&#x7B26;3 ...{&#x6837;&#x5F0F;....}</code><pre><code class="lang-css"><span class="hljs-selector-tag">h3</span>,<span class="hljs-selector-tag">h4</span>,<span class="hljs-selector-tag">h5</span>{<span class="hljs-attribute">color</span>:green;} <span class="hljs-comment">/*h3&#x3001;h4&#x548C;h5&#x90FD;&#x91C7;&#x7528;&#x6B64;&#x6837;&#x5F0F;*/</span>
+</code></pre>
+</li>
+</ul>
+<p>(6). &#x4F2A;&#x7C7B;&#x9009;(&#x4F2A;&#x5143;&#x7D20;)&#x62E9;&#x7B26;&#xFF1A;</p>
+<ul>
+<li>&#x683C;&#x5F0F;&#xFF1A;<code>&#x6807;&#x7B7E;&#x540D;:&#x4F2A;&#x7C7B;&#x540D;{&#x6837;&#x5F0F;....}</code><pre><code class="lang-css"><span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:link</span> {<span class="hljs-attribute">color</span>: <span class="hljs-number">#FF0000</span>; <span class="hljs-attribute">text-decoration</span>: none}             <span class="hljs-comment">/* &#x672A;&#x8BBF;&#x95EE;&#x7684;&#x94FE;&#x63A5; */</span>
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {<span class="hljs-attribute">color</span>: <span class="hljs-number">#00FF00</span>; <span class="hljs-attribute">text-decoration</span>: none}          <span class="hljs-comment">/* &#x5DF2;&#x8BBF;&#x95EE;&#x7684;&#x94FE;&#x63A5; */</span>
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {<span class="hljs-attribute">color</span>: <span class="hljs-number">#FF00FF</span>; <span class="hljs-attribute">text-decoration</span>: underline}     <span class="hljs-comment">/* &#x9F20;&#x6807;&#x5728;&#x94FE;&#x63A5;&#x4E0A; */</span>
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {<span class="hljs-attribute">color</span>: <span class="hljs-number">#0000FF</span>; <span class="hljs-attribute">text-decoration</span>: underline}     <span class="hljs-comment">/* &#x6FC0;&#x6D3B;&#x94FE;&#x63A5; */</span>
+</code></pre>
+</li>
+</ul>
+<h3 id="152-css3&#x4E2D;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF08;&#x719F;&#x6089;&#xFF09;">1.5.2 CSS3&#x4E2D;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF08;&#x719F;&#x6089;&#xFF09;</h3>
+<p>(1). &#x5173;&#x7CFB;&#x9009;&#x62E9;&#x5668;&#xFF1A;</p>
+<pre><code>div&gt;p &#x9009;&#x62E9;&#x6240;&#x6709;&#x4F5C;&#x4E3A;div&#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;p
+div+p &#x9009;&#x62E9;&#x7D27;&#x8D34;&#x5728;div&#x5143;&#x7D20;&#x4E4B;&#x540E;p&#x5143;&#x7D20;
+div~p &#x9009;&#x62E9;div&#x5143;&#x7D20;&#x540E;&#x9762;&#x7684;&#x6240;&#x6709;&#x5144;&#x5F1F;&#x5143;&#x7D20;p
+</code></pre><p>(2). &#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;&#xFF1A;</p>
+<pre><code>[attribute]&#x9009;&#x62E9;&#x5177;&#x6709;attribute&#x5C5E;&#x6027;&#x7684;&#x5143;&#x7D20;&#x3002;
+[attribute=value]&#x9009;&#x62E9;&#x5177;&#x6709;attribute&#x5C5E;&#x6027;&#x4E14;&#x5C5E;&#x6027;&#x503C;&#x7B49;&#x4E8E;value&#x7684;&#x5143;&#x7D20;&#x3002;
+[attribute~=value]&#x9009;&#x62E9;&#x5177;&#x6709;attribute&#x5C5E;&#x6027;&#x4E14;&#x5C5E;&#x6027;&#x503C;&#x4E3A;&#x4E00;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x7684;&#x5B57;&#x8BCD;&#x5217;&#x8868;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x7B49;&#x4E8E;value&#x7684;&#x5143;&#x7D20;&#x3002; 
+[attribute|=value]&#x9009;&#x62E9;&#x5177;&#x6709;att&#x5C5E;&#x6027;&#x4E14;&#x5C5E;&#x6027;&#x503C;&#x4E3A;&#x4EE5;val&#x5F00;&#x5934;&#x5E76;&#x7528;&#x8FDE;&#x63A5;&#x7B26;&quot;-&quot;&#x5206;&#x9694;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x7684;E&#x5143;&#x7D20;&#x3002;
+[attibute^=value]&#x5339;&#x914D;&#x5177;&#x6709;attribute&#x5C5E;&#x6027;&#x3001;&#x4E14;&#x503C;&#x4EE5;valule&#x5F00;&#x5934;&#x7684;E&#x5143;&#x7D20;
+[attribute$=value]&#x5339;&#x914D;&#x5177;&#x6709;attribute&#x5C5E;&#x6027;&#x3001;&#x4E14;&#x503C;&#x4EE5;value&#x7ED3;&#x5C3E;&#x7684;E&#x5143;&#x7D20;
+[attribute*=value]&#x5339;&#x914D;&#x5177;&#x6709;attribute&#x5C5E;&#x6027;&#x3001;&#x4E14;&#x503C;&#x4E2D;&#x542B;&#x6709;value&#x7684;E&#x5143;&#x7D20;
+</code></pre><p>(3). &#x7ED3;&#x6784;&#x6027;&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#xFF1A;</p>
+<pre><code>::first-letter&#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x5185;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x6837;&#x5F0F;&#x3002; 
+::first-line&#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x5185;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x7684;&#x6837;&#x5F0F;&#x3002; 
+:before&#x8BBE;&#x7F6E;&#x5728;&#x5BF9;&#x8C61;&#x524D;&#xFF08;&#x4F9D;&#x636E;&#x5BF9;&#x8C61;&#x6811;&#x7684;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#xFF09;&#x53D1;&#x751F;&#x7684;&#x5185;&#x5BB9;&#x3002;
+:after&#x8BBE;&#x7F6E;&#x5728;&#x5BF9;&#x8C61;&#x540E;&#xFF08;&#x4F9D;&#x636E;&#x5BF9;&#x8C61;&#x6811;&#x7684;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#xFF09;&#x53D1;&#x751F;&#x7684;&#x5185;&#x5BB9;&#x3002;
+:lang(language)&#x5339;&#x914D;&#x4F7F;&#x7528;&#x7279;&#x6B8A;&#x8BED;&#x8A00;&#x7684;E&#x5143;&#x7D20;&#x3002; 
+:element1~element2:
+:first-of-type&#x5339;&#x914D;&#x540C;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x540C;&#x7EA7;&#x5144;&#x5F1F;&#x5143;&#x7D20;
+:last-of-type&#x5339;&#x914D;&#x540C;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x540C;&#x7EA7;&#x5144;&#x5F1F;&#x5143;&#x7D20;
+:only-of-type&#x5339;&#x914D;&#x540C;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x540C;&#x7EA7;&#x5144;&#x5F1F;&#x5143;&#x7D20;
+:only-child&#x5339;&#x914D;&#x7236;&#x5143;&#x7D20;&#x4EC5;&#x6709;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;
+:nth-child(n)&#x5339;&#x914D;&#x7236;&#x5143;&#x7D20;&#x7684;&#x7B2C;n&#x4E2A;&#x5B50;&#x5143;&#x7D20;
+:nth-last-child(n)&#x5339;&#x914D;&#x540C;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x540C;&#x7EA7;&#x5144;&#x5F1F;&#x5143;&#x7D20;
+:last-child()&#x5339;&#x914D;&#x7236;&#x5143;&#x7D20;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;
+:root&#x5339;&#x914D;&#x5143;&#x7D20;&#x5728;&#x6587;&#x6863;&#x7684;&#x6839;&#x5143;&#x7D20;&#x3002;&#x5728;HTML&#x4E2D;&#xFF0C;&#x6839;&#x5143;&#x7D20;&#x6C38;&#x8FDC;&#x662F;HTML 
+:empty&#x5339;&#x914D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5B50;&#x5143;&#x7D20;&#xFF08;&#x5305;&#x62EC;text&#x8282;&#x70B9;&#xFF09;&#x7684;&#x5143;&#x7D20;
+</code></pre><p>(4). *&#x72B6;&#x6001;&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;</p>
+<pre><code>:link &#x8BBE;&#x7F6E;&#x8D85;&#x94FE;&#x63A5;a&#x5728;&#x672A;&#x88AB;&#x8BBF;&#x95EE;&#x524D;&#x7684;&#x6837;&#x5F0F;&#x3002;
+:visited &#x8BBE;&#x7F6E;&#x8D85;&#x94FE;&#x63A5;a&#x5728;&#x5176;&#x94FE;&#x63A5;&#x5730;&#x5740;&#x5DF2;&#x88AB;&#x8BBF;&#x95EE;&#x8FC7;&#x65F6;&#x7684;&#x6837;&#x5F0F;
+:active     &#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x5728;&#x88AB;&#x7528;&#x6237;&#x6FC0;&#x6D3B;&#xFF08;&#x5728;&#x9F20;&#x6807;&#x70B9;&#x51FB;&#x4E0E;&#x91CA;&#x653E;&#x4E4B;&#x95F4;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#xFF09;&#x65F6;&#x7684;&#x6837;&#x5F0F;
+*:hover    &#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x5728;&#x5176;&#x9F20;&#x6807;&#x60AC;&#x505C;&#x65F6;&#x7684;&#x6837;&#x5F0F;
+*:focus    &#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x5728;&#x5176;&#x83B7;&#x53D6;&#x7126;&#x70B9;&#x65F6;&#x7684;&#x6837;&#x5F0F;
+:target    &#x5339;&#x914D;&#x76F8;&#x5173;URL&#x6307;&#x5411;&#x7684;E&#x5143;&#x7D20;
+:enabled   &#x5339;&#x914D;&#x7528;&#x6237;&#x754C;&#x9762;&#x4E0A;&#x5904;&#x4E8E;&#x53EF;&#x7528;&#x72B6;&#x6001;&#x7684;&#x5143;&#x7D20;
+:disabled   &#x5339;&#x914D;&#x7528;&#x6237;&#x754C;&#x9762;&#x4E0A;&#x5904;&#x4E8E;&#x7981;&#x7528;&#x72B6;&#x6001;&#x7684;&#x5143;&#x7D20;
+:checked   &#x5339;&#x914D;&#x7528;&#x6237;&#x754C;&#x9762;&#x4E0A;&#x5904;&#x4E8E;&#x9009;&#x4E2D;&#x72B6;&#x6001;&#x7684;&#x5143;&#x7D20;
+:not(selector)&#x5339;&#x914D;&#x4E0D;&#x542B;&#x6709;selector&#x9009;&#x62E9;&#x7B26;&#x7684;&#x5143;&#x7D20;
+::selection  &#x8BBE;&#x7F6E;&#x5BF9;&#x8C61;&#x88AB;&#x9009;&#x62E9;&#x65F6;&#x7684;&#x6837;&#x5F0F;
+</code></pre><p>(5). &#x5176;&#x4ED6;&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;</p>
+<pre><code>E:not(s) &#xFF1A; {attribute}
+&#x5339;&#x914D;&#x6240;&#x6709;&#x4E0D;&#x5339;&#x914D;&#x7B80;&#x5355;&#x9009;&#x62E9;&#x7B26;s&#x7684;&#x5143;&#x7D20;E
+p:not(.bg) {background-color:#00FF00;}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.html" class="navigation navigation-prev " aria-label="Previous page: 1.4 CSS层叠样式表介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.html" class="navigation navigation-next " aria-label="Next page: 1.6 CSS常用属性">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.5 CSS的常用选择符","level":"1.3.5","depth":2,"next":{"title":"1.6 CSS常用属性","level":"1.3.6","depth":2,"path":"week01/6.md","ref":"week01/6.md","articles":[]},"previous":{"title":"1.4 CSS层叠样式表介绍","level":"1.3.4","depth":2,"path":"week01/4.md","ref":"week01/4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week01/5.md","mtime":"2018-03-09T09:30:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-02T05:19:47.702Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

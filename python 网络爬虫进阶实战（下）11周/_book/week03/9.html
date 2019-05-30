@@ -1,0 +1,906 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>26. 使用web展示爬取信息 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10.html" />
+    
+    
+    <link rel="prev" href="8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    一、Python网络爬虫进阶实战(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/1.html">
+            
+                <a href="../week01/1.html">
+            
+                    
+                    1. Scrapy框架介绍与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/2.html">
+            
+                <a href="../week01/2.html">
+            
+                    
+                    2. Scrapy框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/3.html">
+            
+                <a href="../week01/3.html">
+            
+                    
+                    3. Selector选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/4.html">
+            
+                <a href="../week01/4.html">
+            
+                    
+                    4. Spider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/5.html">
+            
+                <a href="../week01/5.html">
+            
+                    
+                    5. Downloader Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/6.html">
+            
+                <a href="../week01/6.html">
+            
+                    
+                    6. Spider Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week01/7.html">
+            
+                <a href="../week01/7.html">
+            
+                    
+                    7. ItemPipeline的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week01/8.html">
+            
+                <a href="../week01/8.html">
+            
+                    
+                    8. Scrapy爬虫案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week01/9.html">
+            
+                <a href="../week01/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    二、Python网络爬虫进阶实战(中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/1.html">
+            
+                <a href="../week02/1.html">
+            
+                    
+                    09. Selenium的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/2.html">
+            
+                <a href="../week02/2.html">
+            
+                    
+                    10. Selenium爬取淘宝商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/3.html">
+            
+                <a href="../week02/3.html">
+            
+                    
+                    11. MongoDB数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/4.html">
+            
+                <a href="../week02/4.html">
+            
+                    
+                    12. Scrapy框架使用Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/5.html">
+            
+                <a href="../week02/5.html">
+            
+                    
+                    13. 代理的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../week02/6.html">
+            
+                <a href="../week02/6.html">
+            
+                    
+                    14. 使用代理爬取信息实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../week02/7.html">
+            
+                <a href="../week02/7.html">
+            
+                    
+                    15. Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../week02/8.html">
+            
+                <a href="../week02/8.html">
+            
+                    
+                    16. 分布式爬虫原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../week02/9.html">
+            
+                <a href="../week02/9.html">
+            
+                    
+                    17. Scrapy分布式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../week02/10.html">
+            
+                <a href="../week02/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    三、Python网络爬虫进阶实战(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    18. App的信息爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    19. mitmproxy的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    20. App信息抓取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    21. 从API爬取天气预报数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    22. 滑动验证码的识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    23. 爬虫项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    24. 爬虫项目架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    25. 爬虫项目的代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    26. 使用web展示爬取信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >26. 使用web展示爬取信息</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="26-&#x4F7F;&#x7528;web&#x5C55;&#x793A;&#x722C;&#x53D6;&#x4FE1;&#x606F;">26. &#x4F7F;&#x7528;web&#x5C55;&#x793A;&#x722C;&#x53D6;&#x4FE1;&#x606F;</h1>
+<h3 id="261-&#x521B;&#x5EFA;&#x9879;&#x76EE;myweb&#x548C;&#x5E94;&#x7528;web">26.1 &#x521B;&#x5EFA;&#x9879;&#x76EE;myweb&#x548C;&#x5E94;&#x7528;web</h3>
+<pre><code>    # &#x521B;&#x5EFA;&#x9879;&#x76EE;&#x6846;&#x67B6;myweb
+    $ django-admin startproject myweb
+
+    $ cd myweb
+
+    # &#x5728;&#x9879;&#x76EE;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;web&#x5E94;&#x7528;
+    $ python3 manage.py startapp web
+
+    # &#x521B;&#x5EFA;&#x6A21;&#x677F;&#x76EE;&#x5F55;
+    $ mkdir templates
+    $ mkdir templates/web
+
+    $ cd ..
+
+    $ tree myweb
+
+    myweb
+    &#x251C;&#x2500;&#x2500; myweb
+    &#x2502;   &#x251C;&#x2500;&#x2500; __init__.py
+    &#x2502;   &#x251C;&#x2500;&#x2500; settings.py
+    &#x2502;   &#x251C;&#x2500;&#x2500; urls.py
+    &#x2502;   &#x2514;&#x2500;&#x2500; wsgi.py
+    &#x251C;&#x2500;&#x2500; manage.py
+    &#x251C;&#x2500;&#x2500; web
+    &#x2502;   &#x251C;&#x2500;&#x2500; admin.py
+    &#x2502;   &#x251C;&#x2500;&#x2500; apps.py
+    &#x2502;   &#x251C;&#x2500;&#x2500; __init__.py
+    &#x2502;   &#x251C;&#x2500;&#x2500; models.py
+    &#x2502;   &#x251C;&#x2500;&#x2500; tests.py
+    &#x2502;   &#x2514;&#x2500;&#x2500; views.py
+    &#x2514;&#x2500;&#x2500; templates
+        &#x2514;&#x2500;&#x2500; web
+</code></pre><h3 id="262-&#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;&#x7F51;&#x7AD9;&#x914D;&#x7F6E;">26.2 &#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;,&#x7F51;&#x7AD9;&#x914D;&#x7F6E;</h3>
+<ul>
+<li>&#x2460; &#x7F16;&#x8F91;myweb/web/<strong>init</strong>.py&#x6587;&#x4EF6;&#xFF0C;&#x6DFB;&#x52A0;Pymysql&#x7684;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#x652F;&#x6301;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymysql
+pymysql.install_as_MySQLdb()
+</code></pre>
+<ul>
+<li>&#x2461; &#x7F16;&#x8F91;myweb/web/settings.py&#x6587;&#x4EF6;&#xFF0C;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;</li>
+</ul>
+<pre><code class="lang-python">...
+<span class="hljs-comment">#&#x914D;&#x7F6E;&#x81EA;&#x5DF1;&#x7684;&#x670D;&#x52A1;&#x5668;IP&#x5730;&#x5740;</span>
+ALLOWED_HOSTS = [<span class="hljs-string">&apos;*&apos;</span>]
+
+...
+<span class="hljs-comment">#&#x6DFB;&#x52A0;&#x81EA;&#x5DF1;&#x5E94;&#x7528;</span>
+INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+    <span class="hljs-string">&apos;web&apos;</span>,
+]
+...
+
+<span class="hljs-comment"># &#x914D;&#x7F6E;&#x6A21;&#x677F;&#x8DEF;&#x5F84;&#x4FE1;&#x606F;</span>
+TEMPLATES = [
+    {
+        <span class="hljs-string">&apos;BACKEND&apos;</span>: <span class="hljs-string">&apos;django.template.backends.django.DjangoTemplates&apos;</span>,
+        <span class="hljs-string">&apos;DIRS&apos;</span>: [os.path.join(BASE_DIR,<span class="hljs-string">&apos;templates&apos;</span>)],
+        <span class="hljs-string">&apos;APP_DIRS&apos;</span>: <span class="hljs-keyword">True</span>,
+        <span class="hljs-string">&apos;OPTIONS&apos;</span>: {
+            <span class="hljs-string">&apos;context_processors&apos;</span>: [
+                <span class="hljs-string">&apos;django.template.context_processors.debug&apos;</span>,
+                <span class="hljs-string">&apos;django.template.context_processors.request&apos;</span>,
+                <span class="hljs-string">&apos;django.contrib.auth.context_processors.auth&apos;</span>,
+                <span class="hljs-string">&apos;django.contrib.messages.context_processors.messages&apos;</span>,
+            ],
+        },
+    },
+]
+
+
+...
+<span class="hljs-comment"># &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;</span>
+DATABASES = {
+<span class="hljs-string">&apos;default&apos;</span>: {
+    <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.mysql&apos;</span>,
+    <span class="hljs-string">&apos;NAME&apos;</span>: <span class="hljs-string">&apos;doubandb&apos;</span>,
+    <span class="hljs-string">&apos;USER&apos;</span>: <span class="hljs-string">&apos;root&apos;</span>,
+    <span class="hljs-string">&apos;PASSWORD&apos;</span>: <span class="hljs-string">&apos;&apos;</span>,
+    <span class="hljs-string">&apos;HOST&apos;</span>: <span class="hljs-string">&apos;localhost&apos;</span>,
+    <span class="hljs-string">&apos;PORT&apos;</span>: <span class="hljs-string">&apos;3306&apos;</span>,
+}
+...
+</code></pre>
+<h3 id="263-&#x5B9A;&#x4E49;model&#x7C7B;">26.3 &#x5B9A;&#x4E49;Model&#x7C7B;</h3>
+<ul>
+<li>&#x7F16;&#x8F91;myweb/web/models.py</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+
+<span class="hljs-comment">#&#x56FE;&#x4E66;&#x4FE1;&#x606F;&#x6A21;&#x578B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Books</span><span class="hljs-params">(models.Model)</span>:</span>
+    title = models.CharField(max_length=<span class="hljs-number">255</span>) <span class="hljs-comment">#&#x4E66;&#x540D;</span>
+    author = models.CharField(max_length=<span class="hljs-number">64</span>) <span class="hljs-comment">#&#x4F5C;&#x8005;</span>
+    press = models.CharField(max_length=<span class="hljs-number">255</span>)  <span class="hljs-comment">#&#x51FA;&#x7248;&#x793E;</span>
+    original = models.CharField(max_length=<span class="hljs-number">255</span>)<span class="hljs-comment">#&#x539F;&#x4F5C;&#x540D;</span>
+    translator = models.CharField(max_length=<span class="hljs-number">128</span>)<span class="hljs-comment">#&#x8BD1;&#x8005;</span>
+    imprint = models.CharField(max_length=<span class="hljs-number">128</span>)<span class="hljs-comment">#&#x51FA;&#x7248;&#x5E74;</span>
+    pages = models.IntegerField(default=<span class="hljs-number">0</span>)<span class="hljs-comment">#&#x9875;&#x6570;</span>
+    price = models.FloatField() <span class="hljs-comment">#&#x5B9A;&#x4EF7;</span>
+    binding = models.CharField(max_length=<span class="hljs-number">32</span>) <span class="hljs-comment">#&#x88C5;&#x5E27;</span>
+    series = models.CharField(max_length=<span class="hljs-number">128</span>) <span class="hljs-comment">#&#x4E1B;&#x4E66;</span>
+    isbn = models.CharField(max_length=<span class="hljs-number">128</span>) <span class="hljs-comment">#ISBN</span>
+    score = models.CharField(max_length=<span class="hljs-number">128</span>) <span class="hljs-comment">#&#x8BC4;&#x5206;</span>
+    number = models.IntegerField(default=<span class="hljs-number">0</span>) <span class="hljs-comment">#&#x8BC4;&#x8BBA;&#x4EBA;&#x6570;</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        db_table = <span class="hljs-string">&quot;books&quot;</span>  <span class="hljs-comment"># &#x66F4;&#x6539;&#x8868;&#x540D;</span>
+</code></pre>
+<h3 id="264-url&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#xFF1A;">26.4 URL&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#xFF1A;</h3>
+<ul>
+<li>&#x7F16;&#x8F91; myweb/myweb/urls.py &#x6839;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url,include
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^&apos;</span>,include(<span class="hljs-string">&apos;web.urls&apos;</span>)),
+]
+</code></pre>
+<ul>
+<li>&#x521B;&#x5EFA;web&#x5B50;&#x8DEF;&#x7531;&#x6587;&#x4EF6;&#xFF1A;myweb/web/urls.py &#x5E76;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^$&apos;</span>, views.index, name=<span class="hljs-string">&quot;index&quot;</span>),
+    url(<span class="hljs-string">r&apos;^/$&apos;</span>, views.index, name=<span class="hljs-string">&quot;index&quot;</span>),
+]
+</code></pre>
+<h3 id="265-&#x7F16;&#x5199;&#x89C6;&#x56FE;&#x5904;&#x7406;&#x6587;&#x4EF6;">26.5 &#x7F16;&#x5199;&#x89C6;&#x56FE;&#x5904;&#x7406;&#x6587;&#x4EF6;</h3>
+<ul>
+<li>&#x7F16;&#x8F91;&#x89C6;&#x56FE;&#x6587;&#x4EF6;&#xFF1A;myweb/web/views.py</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> django.core.paginator <span class="hljs-keyword">import</span> Paginator
+<span class="hljs-keyword">from</span> web.models <span class="hljs-keyword">import</span> Books
+<span class="hljs-comment"># Create your views here.</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">index</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-comment">#&#x83B7;&#x53D6;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;</span>
+    mod = Books.objects
+    list = mod.filter()
+
+    <span class="hljs-comment">#&#x6267;&#x884C;&#x5206;&#x9875;&#x5904;&#x7406;</span>
+    pIndex = int(request.GET.get(<span class="hljs-string">&quot;p&quot;</span>,<span class="hljs-number">1</span>))
+    page = Paginator(list,<span class="hljs-number">50</span>) <span class="hljs-comment">#&#x4EE5;50&#x6761;&#x6BCF;&#x9875;&#x521B;&#x5EFA;&#x5206;&#x9875;&#x5BF9;&#x8C61;</span>
+    maxpages = page.num_pages <span class="hljs-comment">#&#x6700;&#x5927;&#x9875;&#x6570;</span>
+    <span class="hljs-comment">#&#x5224;&#x65AD;&#x9875;&#x6570;&#x662F;&#x5426;&#x8D8A;&#x754C;</span>
+    <span class="hljs-keyword">if</span> pIndex &gt; maxpages:
+        pIndex = maxpages
+    <span class="hljs-keyword">if</span> pIndex &lt; <span class="hljs-number">1</span>:
+        pIndex = <span class="hljs-number">1</span>
+    list2 = page.page(pIndex) <span class="hljs-comment">#&#x5F53;&#x524D;&#x9875;&#x6570;&#x636E;</span>
+    plist = page.page_range   <span class="hljs-comment">#&#x9875;&#x7801;&#x6570;&#x5217;&#x8868;   </span>
+
+    <span class="hljs-comment">#&#x5C01;&#x88C5;&#x4FE1;&#x606F;&#x52A0;&#x8F7D;&#x6A21;&#x677F;&#x8F93;&#x51FA;</span>
+    context = {<span class="hljs-string">&quot;booklist&quot;</span>:list2,<span class="hljs-string">&apos;plist&apos;</span>:plist,<span class="hljs-string">&apos;pIndex&apos;</span>:pIndex,<span class="hljs-string">&apos;maxpages&apos;</span>:maxpages}
+    <span class="hljs-keyword">return</span> render(request,<span class="hljs-string">&quot;web/index.html&quot;</span>,context)
+</code></pre>
+<h3 id="265-&#x7F16;&#x5199;&#x6A21;&#x677F;&#x8F93;&#x51FA;&#x6587;&#x4EF6;">26.5 &#x7F16;&#x5199;&#x6A21;&#x677F;&#x8F93;&#x51FA;&#x6587;&#x4EF6;</h3>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x6D4F;&#x89C8;&#x56FE;&#x4E66;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">table</span>{<span class="hljs-attribute">font-size</span>:<span class="hljs-number">13px</span>;<span class="hljs-attribute">line-height</span>:<span class="hljs-number">25px</span>;<span class="hljs-attribute">border-collapse</span>: collapse;}
+        <span class="hljs-selector-tag">table</span>,<span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">th</span>, <span class="hljs-selector-tag">table</span> <span class="hljs-selector-tag">tr</span> <span class="hljs-selector-tag">td</span> { <span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span> solid <span class="hljs-number">#dddddd</span>; }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x6D4F;&#x89C8;&#x56FE;&#x4E66;&#x4FE1;&#x606F;<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;95%&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color:#ddeedd;&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>ID&#x53F7;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x6807;&#x9898;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x4F5C;&#x8005;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x51FA;&#x7248;&#x793E;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x51FA;&#x7248;&#x5E74;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x5355;&#x4EF7;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>&#x8BC4;&#x5206;<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            {% for book in booklist %}
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ book.id }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ book.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ book.author }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ book.press }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ book.imprint }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ book.price }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ book.score }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            {% endfor %}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        {% for pindex in plist %}
+            {% if pIndex == pindex %}
+                {{pindex}}&amp;nbsp;&amp;nbsp;
+            {% else %}
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;index&apos;%}?p={{ pindex }}&quot;</span>&gt;</span>{{ pindex }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&amp;nbsp;&amp;nbsp;
+            {% endif %}
+        {% endfor %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="266-&#x542F;&#x52A8;&#x670D;&#x52A1;&#x6D4B;&#x8BD5;&#xFF1A;">26.6 &#x542F;&#x52A8;&#x670D;&#x52A1;&#x6D4B;&#x8BD5;&#xFF1A;</h3>
+<pre><code>  $ python manage.py runserver
+
+  &#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x6D4B;&#x8BD5;
+</code></pre><p><img src="../images/week03/myweb.png" alt=""></p>
+<h3 id="267-&#x4F5C;&#x4E1A;&#xFF1A;">26.7 &#x4F5C;&#x4E1A;&#xFF1A;</h3>
+<ul>
+<li>&#x5F53;&#x6570;&#x636E;&#x5F88;&#x591A;&#x65F6;&#xFF0C;&#x8BF7;&#x95EE;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x767E;&#x5EA6;&#x7684;&#x9875;&#x9762;&#x663E;&#x793A;&#x6548;&#x679C;&#xFF1F; &#x5982;&#xFF1A;&#x4E0A;&#x4E00;&#x9875; ... 10,11,12,13,14,15,16,17,18 ... &#x4E0B;&#x4E00;&#x9875;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8.html" class="navigation navigation-prev " aria-label="Previous page: 25. 爬虫项目的代码实现">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10.html" class="navigation navigation-next " aria-label="Next page: 本周作业">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"26. 使用web展示爬取信息","level":"1.5.9","depth":2,"next":{"title":"本周作业","level":"1.5.10","depth":2,"path":"week03/10.md","ref":"week03/10.md","articles":[]},"previous":{"title":"25. 爬虫项目的代码实现","level":"1.5.8","depth":2,"path":"week03/8.md","ref":"week03/8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week03/9.md","mtime":"2018-06-27T05:12:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-27T05:26:42.551Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

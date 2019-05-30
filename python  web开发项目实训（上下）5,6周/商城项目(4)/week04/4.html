@@ -1,0 +1,913 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>12. 项目实战前台之购物车实战 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.html" />
+    
+    
+    <link rel="prev" href="3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    一、Django商城项目开发(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week03/1.html">
+            
+                <a href="../week03/1.html">
+            
+                    
+                    1. 项目需求分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../week03/1.1.html">
+            
+                <a href="../week03/1.1.html">
+            
+                    
+                    ①. 项目开发流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../week03/1.2.html">
+            
+                <a href="../week03/1.2.html">
+            
+                    
+                    ②. 商城项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week03/2.html">
+            
+                <a href="../week03/2.html">
+            
+                    
+                    2. 项目的数据库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week03/3.html">
+            
+                <a href="../week03/3.html">
+            
+                    
+                    3. 项目架构的程序设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week03/4.html">
+            
+                <a href="../week03/4.html">
+            
+                    
+                    4. 基于Django框架的项目搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week03/5.html">
+            
+                <a href="../week03/5.html">
+            
+                    
+                    5. 项目实战后台之会员管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week03/6.html">
+            
+                <a href="../week03/6.html">
+            
+                    
+                    6. 项目实战后台之管理员登陆与退出
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../week03/6.1.html">
+            
+                <a href="../week03/6.1.html">
+            
+                    
+                    ①. 添加中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../week03/6.2.html">
+            
+                <a href="../week03/6.2.html">
+            
+                    
+                    ②. 登录与退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../week03/6.3.html">
+            
+                <a href="../week03/6.3.html">
+            
+                    
+                    ③. 添加验证码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week03/7.html">
+            
+                <a href="../week03/7.html">
+            
+                    
+                    7. 项目实战后台之商品类别信息管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week03/8.html">
+            
+                <a href="../week03/8.html">
+            
+                    
+                    8. 项目实战后台之商品信息管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.8.1" data-path="../week03/8.1.html">
+            
+                <a href="../week03/8.1.html">
+            
+                    
+                    ①. 搜索分页浏览商品信息(附加)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week03/9.html">
+            
+                <a href="../week03/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    二、Django商城项目开发(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    9. 项目实战前台搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    10. 项目实战前台之会员注册与登陆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    11. 项目实战前台之商品展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    12. 项目实战前台之购物车实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    13. 项目实战前台之下单操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    14. 项目实战前台之个人中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    15. 项目实战后台之订单处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    16. 项目实战总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >12. 项目实战前台之购物车实战</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="12-&#x9879;&#x76EE;&#x5B9E;&#x6218;&#x524D;&#x53F0;&#x4E4B;&#x8D2D;&#x7269;&#x8F66;&#x5B9E;&#x6218;">12. &#x9879;&#x76EE;&#x5B9E;&#x6218;&#x524D;&#x53F0;&#x4E4B;&#x8D2D;&#x7269;&#x8F66;&#x5B9E;&#x6218;</h1>
+<ul>
+<li>&#x672C;&#x8282;&#x5C06;&#x5B9E;&#x73B0;&#x5546;&#x57CE;&#x9879;&#x76EE;&#x524D;&#x53F0;&#x7684;&#x8D2D;&#x7269;&#x8F66;&#x7BA1;&#x7406;&#x6A21;&#x5757;&#xFF1A;&#x6DFB;&#x52A0;&#x3001;&#x6D4F;&#x89C8;&#x3001;&#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#x548C;&#x6E05;&#x7A7A;&#x7B49;&#x8D2D;&#x7269;&#x8F66;&#x64CD;&#x4F5C;&#x3002;</li>
+</ul>
+<p><img src="../images/week04/cart.png" alt=""></p>
+<p><img src="../images/week04/cart2.png" alt=""></p>
+<h3 id="1-&#x5F00;&#x53D1;&#x524D;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;">(1). &#x5F00;&#x53D1;&#x524D;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;</h3>
+<ul>
+<li><p>&#x5728;&#x6570;&#x636E;&#x5E93; <code>shopdb</code> &#x4E2D;&#x5DF2;&#x5B58;&#x5728;&#x6570;&#x636E;&#x8868;<code>goods</code>&#xFF0C;&#x5E76;&#x4E14;&#x5185;&#x6709;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x3002;</p>
+</li>
+<li><p>&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x4E86;session&#xFF0C;&#x5E76;&#x4E14;&#x6267;&#x884C;&#x4E86;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x5B58;&#x5728;<code>django_session</code>&#x8868;&#x3002;</p>
+</li>
+<li><p>&#x5728;common&#x5E94;&#x7528;&#x76EE;&#x5F55;&#x4E2D;&#x7684;<code>myobject/common/models.py</code> &#x6A21;&#x578B;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5DF2;&#x5B58;&#x5728;<code>Goods</code>&#x6A21;&#x578B;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+</li>
+<li><p>&#x5E76;&#x4E14;&#x5728;<code>Goods</code>&#x6A21;&#x578B;&#x7C7B;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x4E86;<code>toDict(self)</code>&#x65B9;&#x6CD5;&#xFF1A;</p>
+</li>
+</ul>
+<pre><code class="lang-python"> <span class="hljs-comment"># &#x6CE8;&#x610F;&#xFF1A;&#x8FD4;&#x56DE;&#x6B64;&#x5546;&#x54C1;&#x7684;&#x5B57;&#x5178;&#x683C;&#x5F0F;</span>
+ <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">toDict</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> {<span class="hljs-string">&apos;id&apos;</span>:self.id,<span class="hljs-string">&apos;typeid&apos;</span>:self.typeid,<span class="hljs-string">&apos;goods&apos;</span>:self.goods,<span class="hljs-string">&apos;company&apos;</span>:self.company,<span class="hljs-string">&apos;price&apos;</span>:self.price,<span class="hljs-string">&apos;picname&apos;</span>:self.picname,<span class="hljs-string">&apos;store&apos;</span>:self.store,<span class="hljs-string">&apos;num&apos;</span>:self.num,<span class="hljs-string">&apos;clicknum&apos;</span>:self.clicknum,<span class="hljs-string">&apos;state&apos;</span>:self.state}
+</code></pre>
+<ul>
+<li>&#x5728;&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;&#x4E2D;&#x5904;&#x7406;<code>&#x7ACB;&#x5373;&#x8D2D;&#x4E70;</code>&#x6309;&#x94AE;,&#x5B8C;&#x6210;&#x5411;&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&#x64CD;&#x4F5C;&#x7684;&#x4F20;&#x503C;&#x548C;&#x8DF3;&#x8F6C;:</li>
+</ul>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;{% url &apos;cart_add&apos; goods.id %}&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+      {% csrf_token %}
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;property-buy&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vm-message&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;J_message&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;property-buy-quantity&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dt</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vm-metatit&quot;</span>&gt;</span>&#x6570;<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;s-space&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;s-space&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>&#x91CF;&#xFF1A;<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;clearfix&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mod-control&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&#x51CF;&#x5C11;&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vm-minus disabled&quot;</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;m&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;J_quantity&quot;</span> <span class="hljs-attr">data-max</span>=<span class="hljs-string">&quot;5&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>
+                   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&#x589E;&#x52A0;&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vm-plus&quot;</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;property-buy-action&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">data-mtype</span>=<span class="hljs-string">&quot;store_de_buy&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;J_btnBuy&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-danger btn-lg mr20&quot;</span>&gt;</span>&#x7ACB;&#x5373;&#x8D2D;&#x4E70;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">data-mtype</span>=<span class="hljs-string">&quot;store_de_cart&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:void(0);&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;J_btnAddCart&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary btn-lg hide&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:inline-block;&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>&#x52A0;&#x5165;&#x8D2D;&#x7269;&#x8F66;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;vm-service&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;J_panicBuyingWrap&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<h3 id="2-&#x9879;&#x76EE;urls&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x914D;&#x7F6E;">(2). &#x9879;&#x76EE;urls&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x914D;&#x7F6E;</h3>
+<ul>
+<li>&#x6253;&#x5F00;&#x6839;&#x8DEF;&#x7531;&#x6587;&#x4EF6;&#xFF1A;myobject/web/urls.py&#x8DEF;&#x7531;&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x8F91;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x4FE1;&#x606F;:</li>
+</ul>
+<pre><code class="lang-python">
+<span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+
+<span class="hljs-keyword">from</span> web.views <span class="hljs-keyword">import</span> index,cart
+
+urlpatterns = [
+    <span class="hljs-comment">#&#x7F51;&#x7AD9;&#x524D;&#x53F0;</span>
+    <span class="hljs-comment"># ... ...</span>
+
+    <span class="hljs-comment"># &#x4F1A;&#x5458;&#x53CA;&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;&#x7B49;&#x8DEF;&#x7531;&#x914D;&#x7F6E;</span>
+    <span class="hljs-comment"># ... ...</span>
+
+    <span class="hljs-comment"># &#x8D2D;&#x7269;&#x8F66;&#x8DEF;&#x7531;</span>
+    url(<span class="hljs-string">r&apos;^cart$&apos;</span>, cart.index,name=<span class="hljs-string">&apos;cart_index&apos;</span>), <span class="hljs-comment">#&#x6D4F;&#x89C8;&#x8D2D;&#x7269;&#x8F66;</span>
+    url(<span class="hljs-string">r&apos;^cart/add/(?P&lt;gid&gt;[0-9]+)$&apos;</span>, cart.add,name=<span class="hljs-string">&apos;cart_add&apos;</span>), <span class="hljs-comment">#&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;</span>
+    url(<span class="hljs-string">r&apos;^cart/del/(?P&lt;gid&gt;[0-9]+)$&apos;</span>, cart.delete,name=<span class="hljs-string">&apos;cart_del&apos;</span>), <span class="hljs-comment">#&#x4ECE;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x5546;&#x54C1;</span>
+    url(<span class="hljs-string">r&apos;^cart/clear$&apos;</span>, cart.clear,name=<span class="hljs-string">&apos;cart_clear&apos;</span>), <span class="hljs-comment">#&#x6E05;&#x7A7A;&#x8D2D;&#x7269;&#x8F66;</span>
+    url(<span class="hljs-string">r&apos;^cart/change$&apos;</span>, cart.change,name=<span class="hljs-string">&apos;cart_change&apos;</span>), <span class="hljs-comment">#&#x66F4;&#x6539;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x5546;&#x54C1;&#x6570;&#x91CF;</span>
+
+]
+</code></pre>
+<h3 id="&#x3000;3&#x3000;&#x7F16;&#x8F91;&#x89C6;&#x56FE;&#x6587;&#x4EF6;">&#x3000;(3).&#x3000;&#x7F16;&#x8F91;&#x89C6;&#x56FE;&#x6587;&#x4EF6;</h3>
+<ul>
+<li>&#x65B0;&#x5EFA;&#x89C6;&#x56FE;&#x6587;&#x4EF6;&#xFF1A;myobject/web/views/cart.py &#x89C6;&#x56FE;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x7F16;&#x8F91;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render
+<span class="hljs-keyword">from</span> django.http <span class="hljs-keyword">import</span> HttpResponse
+<span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect
+<span class="hljs-keyword">from</span> django.core.urlresolvers <span class="hljs-keyword">import</span> reverse
+
+<span class="hljs-keyword">from</span> common.models <span class="hljs-keyword">import</span> Goods,Types
+
+<span class="hljs-comment"># &#x516C;&#x5171;&#x4FE1;&#x606F;&#x52A0;&#x8F7D;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">loadinfo</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x516C;&#x5171;&#x4FE1;&#x606F;&#x52A0;&#x8F7D;&apos;&apos;&apos;</span>
+    context = {}
+    lists = Types.objects.filter(pid=<span class="hljs-number">0</span>)
+    context[<span class="hljs-string">&apos;typelist&apos;</span>] = lists
+    <span class="hljs-keyword">return</span> context
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">index</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x6D4F;&#x89C8;&#x8D2D;&#x7269;&#x8F66;&apos;&apos;&apos;</span>
+    context = loadinfo(request)
+    <span class="hljs-keyword">if</span> <span class="hljs-string">&apos;shoplist&apos;</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> request.session:
+        request.session[<span class="hljs-string">&apos;shoplist&apos;</span>]={}
+    <span class="hljs-keyword">return</span> render(request,<span class="hljs-string">&quot;web/cart.html&quot;</span>,context)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span><span class="hljs-params">(request,gid)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x5728;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x653E;&#x5165;&#x5546;&#x54C1;&#x4FE1;&#x606F;&apos;&apos;&apos;</span>
+    <span class="hljs-comment">#&#x83B7;&#x53D6;&#x8981;&#x653E;&#x5165;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x7684;&#x5546;&#x54C1;&#x4FE1;&#x606F;</span>
+    goods = Goods.objects.get(id=gid)
+    shop = goods.toDict();
+    shop[<span class="hljs-string">&apos;m&apos;</span>] = int(request.POST.get(<span class="hljs-string">&apos;m&apos;</span>,<span class="hljs-number">1</span>))  <span class="hljs-comment">#&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8D2D;&#x4E70;&#x91CF;&#x5C5E;&#x6027;m</span>
+    <span class="hljs-comment">#&#x4ECE;session&#x83B7;&#x53D6;&#x8D2D;&#x7269;&#x8F66;&#x4FE1;&#x606F;&#xFF0C;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x7A7A;&#x5B57;&#x5178;</span>
+    shoplist = request.session.get(<span class="hljs-string">&apos;shoplist&apos;</span>,{})
+    <span class="hljs-comment">#&#x5224;&#x65AD;&#x6B64;&#x5546;&#x54C1;&#x662F;&#x5426;&#x5728;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;</span>
+    <span class="hljs-keyword">if</span> gid <span class="hljs-keyword">in</span> shoplist:
+        <span class="hljs-comment">#&#x5546;&#x54C1;&#x6570;&#x91CF;&#x52A0;</span>
+        shoplist[gid][<span class="hljs-string">&apos;m&apos;</span>]+=shop[<span class="hljs-string">&apos;m&apos;</span>]
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-comment">#&#x65B0;&#x5546;&#x54C1;&#x6DFB;&#x52A0;</span>
+        shoplist[gid]=shop
+
+    <span class="hljs-comment">#&#x5C06;&#x8D2D;&#x7269;&#x8F66;&#x4FE1;&#x606F;&#x653E;&#x56DE;&#x5230;session</span>
+    request.session[<span class="hljs-string">&apos;shoplist&apos;</span>] = shoplist
+
+    <span class="hljs-comment">#&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6D4F;&#x89C8;&#x8D2D;&#x7269;&#x8F66;&#x9875;</span>
+    <span class="hljs-keyword">return</span> redirect(reverse(<span class="hljs-string">&apos;cart_index&apos;</span>))
+    <span class="hljs-comment">#return render(request,&quot;web/cart.html&quot;)</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delete</span><span class="hljs-params">(request,gid)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x5546;&#x54C1;&apos;&apos;&apos;</span>
+    shoplist = request.session[<span class="hljs-string">&apos;shoplist&apos;</span>]
+    <span class="hljs-keyword">del</span> shoplist[gid]
+    request.session[<span class="hljs-string">&apos;shoplist&apos;</span>] = shoplist
+    <span class="hljs-keyword">return</span> redirect(reverse(<span class="hljs-string">&apos;cart_index&apos;</span>))
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">clear</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x6E05;&#x7A7A;&#x8D2D;&#x7269;&#x8F66;&apos;&apos;&apos;</span>
+    context = loadinfo(request)
+    request.session[<span class="hljs-string">&apos;shoplist&apos;</span>] = {}
+    <span class="hljs-keyword">return</span> render(request,<span class="hljs-string">&quot;web/cart.html&quot;</span>,context)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">change</span><span class="hljs-params">(request)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;&#x66F4;&#x6539;&#x8D2D;&#x7269;&#x8F66;&#x4E2D;&#x7684;&#x5546;&#x54C1;&#x4FE1;&#x606F;&apos;&apos;&apos;</span>
+    <span class="hljs-comment">#context = loadinfo(request)</span>
+    shoplist = request.session[<span class="hljs-string">&apos;shoplist&apos;</span>]
+    <span class="hljs-comment">#&#x83B7;&#x53D6;&#x4FE1;&#x606F;</span>
+    shopid = request.GET.get(<span class="hljs-string">&apos;gid&apos;</span>,<span class="hljs-string">&apos;0&apos;</span>)
+    num = int(request.GET[<span class="hljs-string">&apos;num&apos;</span>])
+    <span class="hljs-keyword">if</span> num&lt;<span class="hljs-number">1</span>:
+        num = <span class="hljs-number">1</span>
+    shoplist[shopid][<span class="hljs-string">&apos;m&apos;</span>] = num <span class="hljs-comment">#&#x66F4;&#x6539;&#x5546;&#x54C1;&#x6570;&#x91CF;</span>
+    request.session[<span class="hljs-string">&apos;shoplist&apos;</span>] = shoplist
+    <span class="hljs-keyword">return</span> redirect(reverse(<span class="hljs-string">&apos;cart_index&apos;</span>))
+    <span class="hljs-comment">#return render(request,&quot;web/cart.html&quot;,context)</span>
+</code></pre>
+<h3 id="4-&#x7F16;&#x5199;&#x6A21;&#x677F;&#x6587;&#x4EF6;">(4). &#x7F16;&#x5199;&#x6A21;&#x677F;&#x6587;&#x4EF6;</h3>
+<ul>
+<li>4.1. &#x6253;&#x5F00;&#x7236;&#x7C7B;&#x6A21;&#x677F;&#xFF1A;/templates/web/base.html &#xFF0C;&#x7F16;&#x8F91;&#x5BFC;&#x822A;&#x680F;&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code class="lang-html">    ...
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-service-item layout-header-service-cart&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;layoutHeaderCart&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-service-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;cart_index&apos; %}&quot;</span> <span class="hljs-attr">data-mtype</span>=<span class="hljs-string">&quot;wmz_public_yt_cart&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-shopping-cart&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;layout-header-service-cart-num&quot;</span>&gt;</span>{{ request.session.shoplist|length}}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    ...
+</code></pre>
+<ul>
+<li>4.2. &#x8D2D;&#x7269;&#x8F66;&#x9875;&#x9762;&#x4FE1;&#x606F;&#x663E;&#x793A;&#x6A21;&#x677F;&#xFF1A;/templates/web/cart.html</li>
+</ul>
+<pre><code class="lang-html">{% extends &quot;web/base.html&quot; %}
+{% load static from staticfiles %}
+
+{% block mylink %}
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;web/css/cart.css&apos; %}&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;web/css/cart-app.css&apos; %}&quot;</span>&gt;</span>
+{% endblock %}
+
+{% block mainbody %}
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mainbody cart&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;margin-top: 80px;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- &#x8D2D;&#x7269;&#x8F66;&#x8BE6;&#x60C5;&#x5934; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-select col-md-3 col-xs-3 col-sm-3&quot;</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-select-all JSelectAll&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-checkbox&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-select-title&quot;</span>&gt;</span>&#x5168;&#x9009;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-name col-md-3 hidden-xs hidden-sm&quot;</span>&gt;</span>&#x5546;&#x54C1;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-price col-md-2 hidden-xs hidden-sm&quot;</span>&gt;</span>&#x5355;&#x4EF7;(&#x5143;)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-number col-md-2 hidden-xs hidden-sm&quot;</span>&gt;</span>&#x6570;&#x91CF;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-total col-md-1 hidden-xs hidden-sm&quot;</span>&gt;</span>&#x5C0F;&#x8BA1;(&#x5143;)<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-ctrl col-md-1 hidden-xs hidden-sm&quot;</span>&gt;</span>&#x64CD;&#x4F5C;<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span><span class="hljs-comment">&lt;!-- &#x8D2D;&#x7269;&#x8F66;&#x8BE6;&#x60C5;&#x5934; E--&gt;</span>
+
+      <span class="hljs-comment">&lt;!-- &#x8D2D;&#x7269;&#x6E05;&#x5355;&#x4FE1;&#x606F;&#x5217;&#x8868; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-merchant-list&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-merchant&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-merchant-body&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            {% for shop in request.session.shoplist.values %}
+              <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-select col-md-3 col-xs-4 col-sm-4&quot;</span>&gt;</span>  
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-checkbox&quot;</span> <span class="hljs-attr">gid</span>=<span class="hljs-string">&quot;{{shop.id}}&quot;</span> <span class="hljs-attr">price</span>=<span class="hljs-string">&quot;{% widthratio  shop.price 1 shop.m %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> 
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;detail&apos; shop.id %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-link&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/static/goods/s_{{ shop.picname }}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-img&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;{{ shop.goods }}&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;50&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-name col-md-3 col-xs-8 col-sm-8&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;detail&apos; shop.id %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-link&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ shop.goods }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-price&quot;</span>&gt;</span>{{ shop.price }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-number&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-number-adder&quot;</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-number-max show&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-subtract disabled&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-num&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-input&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-add&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-price col-md-2 hidden-xs hidden-sm&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-price&quot;</span>&gt;</span>{{ shop.price}}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-number col-md-2 hidden-xs hidden-sm&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-number-adder&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-number-max show&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder&quot;</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;window.location=&apos;{% url &apos;cart_change&apos; %}?gid={{shop.id}}&amp;num={{shop.m|add:-1}}&apos;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-subtract&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-num&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-input&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;{{ shop.m }}&quot;</span> <span class="hljs-attr">onblur</span>=<span class="hljs-string">&quot;window.location=&apos;{% url &apos;cart_change&apos; %}?gid={{shop.id}}&amp;num=&apos;+this.value&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;window.location=&apos;{% url &apos;cart_change&apos; %}?gid={{shop.id}}&amp;num={{shop.m|add:1}}&apos;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-adder-add&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-total col-md-1 hidden-xs hidden-sm&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-price total&quot;</span>&gt;</span>{% widthratio  shop.price 1 shop.m %}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-col-ctrl col-md-1 hidden-xs hidden-sm&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;cart_del&apos; shop.id %}&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&#x5220;&#x9664;&quot;</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-product-remove&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-remove&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            {% endfor %}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-comment">&lt;!-- &#x8D2D;&#x7269;&#x6E05;&#x5355;&#x4FE1;&#x606F;&#x5217;&#x8868; E--&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x7ED3;&#x7B97;&#x8BE6;&#x60C5; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cartFooter&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-left col-md-6 col-xs-4 col-sm-4&quot;</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-select-all JSelectAll&quot;</span> <span class="hljs-attr">data-mdesc</span>=<span class="hljs-string">&quot;&#x5168;&#x9009;&#x6309;&#x94AE;&quot;</span> <span class="hljs-attr">data-mtype</span>=<span class="hljs-string">&quot;store_cart_all&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-checkbox&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-select-title&quot;</span>&gt;</span>&#x5168;&#x9009;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+           <span class="hljs-comment">&lt;!-- &lt;span class=&quot;cart-remove-selected&quot; id=&quot;removeSelected&quot;&gt;&#x5220;&#x9664;&#x9009;&#x4E2D;&#x7684;&#x5546;&#x54C1;&lt;/span&gt; --&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-count&quot;</span>&gt;</span>
+            &#x5171;
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-num&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;totalCount&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            &#x4EF6;&#x5546;&#x54C1;
+           <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-btn btn-danger&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;window.location=&apos;{% url &apos;cart_clear&apos; %}&apos;&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cartSubmit&quot;</span>&gt;</span>&#x6E05;&#x7A7A;&#x8D2D;&#x7269;&#x8F66;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-right col-md-5 col-md-offset-1 col-sm-offset-2 col-xs-8 col-sm-6&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-sum&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-text&quot;</span>&gt;</span>&#x5DF2;&#x4F18;&#x60E0;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-num red&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;totalDiscount&quot;</span>&gt;</span>0.00<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-text&quot;</span>&gt;</span>&#x5143;&#xFF0C; &#x5408;&#x8BA1;(&#x4E0D;&#x542B;&#x8FD0;&#x8D39;)&#xFF1A;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cart-footer-total&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;totalPrice&quot;</span>&gt;</span>0.0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;window.location=&apos;/orders/add?ids=&apos;+loadTotal().join(&apos;,&apos;)&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mz-btn btn-success&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;cartSubmit&quot;</span>&gt;</span>&#x53BB;&#x7ED3;&#x7B97;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-comment">&lt;!-- &#x7ED3;&#x7B97;&#x8BE6;&#x60C5; E--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+
+{% block myjs %}
+    //&#x5168;&#x9009;
+    allSelect();
+    //&#x767B;&#x5F55;&#x56FE;&#x7247;&#x9F20;&#x6807;&#x7ECF;&#x8FC7;
+    //topLogin();
+    //&#x5546;&#x54C1;&#x6570;&#x91CF;&#x52A0;&#x51CF;
+    //cartAddMin()
+    //loadTotal();
+
+    var gidlist = [];
+{% endblock %}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.html" class="navigation navigation-prev " aria-label="Previous page: 11. 项目实战前台之商品展示">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.html" class="navigation navigation-next " aria-label="Next page: 13. 项目实战前台之下单操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12. 项目实战前台之购物车实战","level":"1.4.4","depth":2,"next":{"title":"13. 项目实战前台之下单操作","level":"1.4.5","depth":2,"path":"week04/5.md","ref":"week04/5.md","articles":[]},"previous":{"title":"11. 项目实战前台之商品展示","level":"1.4.3","depth":2,"path":"week04/3.md","ref":"week04/3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week04/4.md","mtime":"2018-04-18T04:09:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-18T02:45:06.907Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

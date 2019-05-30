@@ -1,0 +1,1091 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>25. 爬虫项目的代码实现 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="9.html" />
+    
+    
+    <link rel="prev" href="7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    一、Python网络爬虫进阶实战(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/1.html">
+            
+                <a href="../week01/1.html">
+            
+                    
+                    1. Scrapy框架介绍与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/2.html">
+            
+                <a href="../week01/2.html">
+            
+                    
+                    2. Scrapy框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/3.html">
+            
+                <a href="../week01/3.html">
+            
+                    
+                    3. Selector选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/4.html">
+            
+                <a href="../week01/4.html">
+            
+                    
+                    4. Spider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/5.html">
+            
+                <a href="../week01/5.html">
+            
+                    
+                    5. Downloader Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/6.html">
+            
+                <a href="../week01/6.html">
+            
+                    
+                    6. Spider Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week01/7.html">
+            
+                <a href="../week01/7.html">
+            
+                    
+                    7. ItemPipeline的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week01/8.html">
+            
+                <a href="../week01/8.html">
+            
+                    
+                    8. Scrapy爬虫案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week01/9.html">
+            
+                <a href="../week01/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    二、Python网络爬虫进阶实战(中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/1.html">
+            
+                <a href="../week02/1.html">
+            
+                    
+                    09. Selenium的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/2.html">
+            
+                <a href="../week02/2.html">
+            
+                    
+                    10. Selenium爬取淘宝商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/3.html">
+            
+                <a href="../week02/3.html">
+            
+                    
+                    11. MongoDB数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/4.html">
+            
+                <a href="../week02/4.html">
+            
+                    
+                    12. Scrapy框架使用Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/5.html">
+            
+                <a href="../week02/5.html">
+            
+                    
+                    13. 代理的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../week02/6.html">
+            
+                <a href="../week02/6.html">
+            
+                    
+                    14. 使用代理爬取信息实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../week02/7.html">
+            
+                <a href="../week02/7.html">
+            
+                    
+                    15. Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../week02/8.html">
+            
+                <a href="../week02/8.html">
+            
+                    
+                    16. 分布式爬虫原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../week02/9.html">
+            
+                <a href="../week02/9.html">
+            
+                    
+                    17. Scrapy分布式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../week02/10.html">
+            
+                <a href="../week02/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    三、Python网络爬虫进阶实战(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    18. App的信息爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    19. mitmproxy的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    20. App信息抓取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    21. 从API爬取天气预报数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    22. 滑动验证码的识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    23. 爬虫项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    24. 爬虫项目架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    25. 爬虫项目的代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    26. 使用web展示爬取信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >25. 爬虫项目的代码实现</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="25-&#x722C;&#x866B;&#x9879;&#x76EE;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;">25. &#x722C;&#x866B;&#x9879;&#x76EE;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</h1>
+<h3 id="251-&#x6570;&#x636E;&#x5E93;&#x7684;&#x51C6;&#x5907;&#xFF1A;">25.1 &#x6570;&#x636E;&#x5E93;&#x7684;&#x51C6;&#x5907;&#xFF1A;</h3>
+<ul>
+<li><p>&#x542F;&#x52A8;MySQL&#x548C;Redis&#x6570;&#x636E;&#x5E93;</p>
+</li>
+<li><p>&#x5728;MySQL&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF1A;<code>doubandb</code>&#xFF0C;&#x5E76;&#x8FDB;&#x5165;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;<code>books</code>&#x6570;&#x636E;&#x8868;</p>
+</li>
+</ul>
+<pre><code class="lang-mysql">CREATE TABLE `books` (                                            
+  `id` bigint(20) unsigned NOT NULL COMMENT &apos;ID&#x53F7;&apos;,              
+  `title` varchar(255) DEFAULT NULL COMMENT &apos;&#x4E66;&#x540D;&apos;,             
+  `author` varchar(64) DEFAULT NULL COMMENT &apos;&#x4F5C;&#x8005;&apos;,             
+  `press` varchar(255) DEFAULT NULL COMMENT &apos;&#x51FA;&#x7248;&#x793E;&apos;,          
+  `original` varchar(255) DEFAULT NULL COMMENT &apos;&#x539F;&#x4F5C;&#x540D;&apos;,       
+  `translator` varchar(128) DEFAULT NULL COMMENT &apos;&#x8BD1;&#x8005;&apos;,        
+  `imprint` varchar(128) DEFAULT NULL COMMENT &apos;&#x51FA;&#x7248;&#x5E74;&apos;,        
+  `pages` int(10) unsigned DEFAULT NULL COMMENT &apos;&#x9875;&#x6570;&apos;,         
+  `price` double(6,2) unsigned DEFAULT NULL COMMENT &apos;&#x5B9A;&#x4EF7;&apos;,     
+  `binding` varchar(32) DEFAULT NULL COMMENT &apos;&#x88C5;&#x5E27;&apos;,            
+  `series` varchar(128) DEFAULT NULL COMMENT &apos;&#x4E1B;&#x4E66;&apos;,            
+  `isbn` varchar(128) DEFAULT NULL COMMENT &apos;ISBN&apos;,                
+  `score` varchar(128) DEFAULT NULL COMMENT &apos;&#x8BC4;&#x5206;&apos;,             
+  `number` int(10) unsigned DEFAULT NULL COMMENT &apos;&#x8BC4;&#x8BBA;&#x4EBA;&#x6570;&apos;,  
+  PRIMARY KEY (`id`)                                              
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+</code></pre>
+<h3 id="252-&#x6A21;&#x5757;1&#x7684;&#x5B9E;&#x73B0;&#xFF1A;">25.2 &#x6A21;&#x5757;1&#x7684;&#x5B9E;&#x73B0;&#xFF1A;</h3>
+<ul>
+<li><p>&#x5B9E;&#x73B0;&#x8C46;&#x74E3;&#x56FE;&#x4E66;&#x4FE1;&#x606F;&#x6240;&#x6709;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#x7684;&#x722C;&#x53D6;&#xFF0C;&#x5E76;&#x56FE;&#x4E66;&#x7684;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#x5199;&#x5165;&#x5230;Redis&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x6B64;&#x6A21;&#x5757;&#x53EF;&#x4F7F;&#x7528;rquests&#x7B80;&#x5355;&#x5B9E;&#x73B0;&#x3002;</p>
+</li>
+<li><p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;python&#x6587;&#x4EF6;&#xFF1A;load_tag_url.py &#x4EE3;&#x7801;&#x5982;&#x4E0B;</p>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment">#&#x4F7F;&#x7528;requests&#x52A0;pyquery&#x722C;&#x53D6;&#x6240;&#x6709;&#x8C46;&#x74E3;&#x56FE;&#x4E66;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5C06;&#x4FE1;&#x606F;&#x50A8;&#x5B58;&#x4E8E;redis&#x4E2D;</span>
+
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">from</span> pyquery <span class="hljs-keyword">import</span> PyQuery <span class="hljs-keyword">as</span> pq
+<span class="hljs-keyword">import</span> redis
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment">#&#x4F7F;&#x7528;requests&#x722C;&#x53D6;&#x6240;&#x6709;&#x8C46;&#x74E3;&#x56FE;&#x4E66;&#x6807;&#x7B7E;&#x4FE1;&#x606F;</span>
+    url = <span class="hljs-string">&quot;https://book.douban.com/tag/?view=type&amp;icn=index-sorttags-all&quot;</span>
+    res = requests.get(url)
+    print(<span class="hljs-string">&quot;status:%d&quot;</span> % res.status_code)
+    html = res.content.decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+
+    <span class="hljs-comment"># &#x4F7F;&#x7528;Pyquery&#x89E3;&#x6790;HTML&#x6587;&#x6863;</span>
+    <span class="hljs-comment">#print(html)</span>
+    doc = pq(html)
+    <span class="hljs-comment">#&#x83B7;&#x53D6;&#x7F51;&#x9875;&#x4E2D;&#x6240;&#x6709;&#x8C46;&#x74E3;&#x56FE;&#x4E66;&#x6807;&#x7B7E;&#x94FE;&#x63A5;&#x4FE1;&#x606F;</span>
+    items = doc(<span class="hljs-string">&quot;table.tagCol tr td a&quot;</span>)
+
+    <span class="hljs-comment"># &#x6307;&#x5B9A;Redis&#x6570;&#x636E;&#x5E93;&#x4FE1;&#x606F;</span>
+    link = redis.StrictRedis(host=<span class="hljs-string">&apos;127.0.0.1&apos;</span>, port=<span class="hljs-number">6379</span>, db=<span class="hljs-number">0</span>)
+    <span class="hljs-comment">#&#x904D;&#x5386;&#x5C01;&#x88C5;&#x6570;&#x636E;&#x5E76;&#x8FD4;&#x56DE;</span>
+    <span class="hljs-keyword">for</span> a <span class="hljs-keyword">in</span> items.items():
+        <span class="hljs-comment">#&#x62FC;&#x88C5;tag&#x7684;url&#x5730;&#x5740;&#x4FE1;&#x606F;</span>
+        tag = a.attr.href
+        <span class="hljs-comment">#&#x5C06;&#x4FE1;&#x606F;&#x4EE5;tag:start_urls&#x5199;&#x5165;&#x5230;Redis&#x4E2D;</span>
+        link.lpush(<span class="hljs-string">&quot;book:tag_urls&quot;</span>,tag)
+
+    print(<span class="hljs-string">&quot;&#x5171;&#x8BA1;&#x5199;&#x5165;tag&#xFF1A;%d&#x4E2A;&quot;</span>%(len(items)))
+
+<span class="hljs-comment">#&#x4E3B;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    main()
+</code></pre>
+<ul>
+<li>&#x8FD0;&#x884C;&#xFF1A;<code>python load_tag_url.py</code></li>
+</ul>
+<h3 id="253-&#x6A21;&#x5757;2&#x7684;&#x5B9E;&#x73B0;&#xFF1A;">25.3 &#x6A21;&#x5757;2&#x7684;&#x5B9E;&#x73B0;&#xFF1A;</h3>
+<ul>
+<li><p>&#x6B64;&#x6A21;&#x5757;&#x8D1F;&#x8D23;&#x4ECE;Redis&#x4E2D;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x56FE;&#x4E66;&#x6807;&#x7B7E;&#xFF0C;&#x5E76;&#x5206;&#x9875;&#x5F0F;&#x7684;&#x722C;&#x53D6;&#x6BCF;&#x672C;&#x56FE;&#x4E66;&#x7684;url&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5C06;&#x4FE1;&#x606F;&#x5199;&#x5165;&#x5230;redis&#x4E2D;&#x3002;</p>
+</li>
+<li><p>&#x2460; &#x9996;&#x5148;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x7F16;&#x5199;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#xFF0C;&#x521B;&#x5EFA;&#x9879;&#x76EE;master(&#x4E3B;)&#x548C;&#x722C;&#x866B;&#x6587;&#x4EF6;</p>
+</li>
+</ul>
+<pre><code>scrapy startproject  master
+
+cd master
+
+scrapy genspider book book.douban.com
+</code></pre><ul>
+<li>&#x2461; &#x7F16;&#x8F91;<code>master/item.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MasterItem</span><span class="hljs-params">(scrapy.Item)</span>:</span>
+    <span class="hljs-comment"># define the fields for your item here like:</span>
+    url = scrapy.Field()
+    <span class="hljs-comment">#pass</span>
+</code></pre>
+<ul>
+<li>&#x2462; &#x7F16;&#x8F91;<code>master/settings.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python">...
+
+ROBOTSTXT_OBEY = <span class="hljs-keyword">False</span>
+
+...
+
+<span class="hljs-comment">#&#x4E0B;&#x8F7D;&#x5668;&#x5728;&#x4E0B;&#x8F7D;&#x540C;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x4E0B;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x524D;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x8BE5;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x9650;&#x5236;&#x722C;&#x53D6;&#x901F;&#x5EA6;&#xFF0C; &#x51CF;&#x8F7B;&#x670D;&#x52A1;&#x5668;&#x538B;&#x529B;&#x3002;&#x540C;&#x65F6;&#x4E5F;&#x652F;&#x6301;&#x5C0F;&#x6570;:</span>
+DOWNLOAD_DELAY = <span class="hljs-number">2</span>
+
+...
+
+<span class="hljs-comment"># Override the default request headers:</span>
+DEFAULT_REQUEST_HEADERS = {
+<span class="hljs-comment">#   &apos;Accept&apos;: &apos;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&apos;,</span>
+<span class="hljs-comment">#   &apos;Accept-Language&apos;: &apos;en&apos;,</span>
+    <span class="hljs-string">&apos;User-Agent&apos;</span>: <span class="hljs-string">&apos;Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0&apos;</span>,
+}
+
+...
+
+ITEM_PIPELINES = {
+    <span class="hljs-string">&apos;master.pipelines.MasterPipeline&apos;</span>: <span class="hljs-number">300</span>,
+}
+
+...
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x53BB;&#x91CD;</span>
+DUPEFILTER_CLASS = <span class="hljs-string">&apos;scrapy_redis.dupefilter.RFPDupeFilter&apos;</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x8C03;&#x5EA6;&#x5668;</span>
+SCHEDULER = <span class="hljs-string">&quot;scrapy_redis.scheduler.Scheduler&quot;</span>
+
+<span class="hljs-comment"># &#x5728;redis&#x4E2D;&#x4FDD;&#x6301;scrapy-redis&#x7528;&#x5230;&#x7684;&#x5404;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x6682;&#x505C;&#x548C;&#x6682;&#x505C;&#x540E;&#x6062;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x6E05;&#x7406;redis queues</span>
+SCHEDULER_PERSIST = <span class="hljs-keyword">True</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x722C;&#x53D6;&#x5730;&#x5740;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x961F;&#x5217;&#xFF0C;</span>
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x7684; &#x6309;&#x4F18;&#x5148;&#x7EA7;&#x6392;&#x5E8F;(Scrapy&#x9ED8;&#x8BA4;)&#xFF0C;&#x7531;sorted set&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x79CD;&#x975E;FIFO&#x3001;LIFO&#x65B9;&#x5F0F;&#x3002;</span>
+SCHEDULER_QUEUE_CLASS = <span class="hljs-string">&apos;scrapy_redis.queue.SpiderPriorityQueue&apos;</span>
+
+<span class="hljs-comment"># REDIS_URL = &apos;redis://localhost:6379&apos; # &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x7701;&#x53BB;</span>
+REDIS_HOST = <span class="hljs-string">&apos;localhost&apos;</span> <span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x6539;&#x6210; localhost</span>
+REDIS_PORT = <span class="hljs-number">6379</span>
+</code></pre>
+<ul>
+<li>&#x2463;  &#x7F16;&#x8F91;<code>master/spiders/book.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy
+<span class="hljs-keyword">from</span> master.items <span class="hljs-keyword">import</span> MasterItem 
+<span class="hljs-keyword">from</span> scrapy <span class="hljs-keyword">import</span> Request
+<span class="hljs-keyword">from</span> urllib.parse <span class="hljs-keyword">import</span> quote
+<span class="hljs-keyword">import</span> redis,re,time,random
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookSpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    name = <span class="hljs-string">&apos;master_book&apos;</span>
+    allowed_domains = [<span class="hljs-string">&apos;book.douban.com&apos;</span>]
+    base_url = <span class="hljs-string">&apos;https://book.douban.com&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start_requests</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x4ECE;redis&#x4E2D;&#x83B7;&#x53D6;&#xFF0C;&#x5E76;&#x722C;&#x53D6;&#x6807;&#x7B7E;&#x5BF9;&#x5E94;&#x7684;&#x7F51;&#x9875;&#x4FE1;&#x606F; &apos;&apos;&apos;</span>
+        r = redis.Redis(host=self.settings.get(<span class="hljs-string">&quot;REDIS_HOST&quot;</span>), port=self.settings.get(<span class="hljs-string">&quot;REDIS_PORT&quot;</span>), decode_responses=<span class="hljs-keyword">True</span>)
+        <span class="hljs-keyword">while</span> r.llen(<span class="hljs-string">&apos;book:tag_urls&apos;</span>):
+            tag = r.lpop(<span class="hljs-string">&apos;book:tag_urls&apos;</span>)
+            url = self.base_url + quote(tag)
+            <span class="hljs-keyword">yield</span> Request(url=url, callback=self.parse,dont_filter=<span class="hljs-keyword">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x89E3;&#x6790;&#x6BCF;&#x9875;&#x7684;&#x56FE;&#x4E66;&#x8BE6;&#x60C5;&#x7684;url&#x5730;&#x5740;&#x4FE1;&#x606F; &apos;&apos;&apos;</span>
+        print(response.url)
+        lists = response.css(<span class="hljs-string">&apos;#subject_list ul li.subject-item a.nbg::attr(href)&apos;</span>).extract()
+        <span class="hljs-keyword">if</span> lists:
+            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> lists:
+                item = MasterItem()
+                item[<span class="hljs-string">&apos;url&apos;</span>] = i
+                <span class="hljs-keyword">yield</span> item
+
+        <span class="hljs-comment">#&#x83B7;&#x53D6;&#x4E0B;&#x4E00;&#x9875;&#x7684;url&#x5730;&#x5740;</span>
+        next_url = response.css(<span class="hljs-string">&quot;span.next a::attr(href)&quot;</span>).extract_first()
+        <span class="hljs-comment">#&#x5224;&#x65AD;&#x82E5;&#x4E0D;&#x662F;&#x6700;&#x540E;&#x4E00;&#x9875;</span>
+        <span class="hljs-keyword">if</span> next_url:
+            url = response.urljoin(next_url)
+            <span class="hljs-comment">#&#x6784;&#x9020;&#x4E0B;&#x4E00;&#x9875;&#x62DB;&#x8058;&#x5217;&#x8868;&#x4FE1;&#x606F;&#x7684;&#x722C;&#x53D6;</span>
+            <span class="hljs-keyword">yield</span> scrapy.Request(url=url,callback=self.parse)
+</code></pre>
+<ul>
+<li>&#x2464;  &#x7F16;&#x8F91;<code>master/pipelines.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> redis,re
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MasterPipeline</span><span class="hljs-params">(object)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,host,port)</span>:</span>
+        <span class="hljs-comment">#&#x8FDE;&#x63A5;redis&#x6570;&#x636E;&#x5E93;</span>
+        self.r = redis.Redis(host=host, port=port, decode_responses=<span class="hljs-keyword">True</span>)
+
+<span class="hljs-meta">    @classmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">from_crawler</span><span class="hljs-params">(cls,crawler)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#xFF08;&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF09;&apos;&apos;&apos;</span>
+        <span class="hljs-keyword">return</span> cls(
+            host = crawler.settings.get(<span class="hljs-string">&quot;REDIS_HOST&quot;</span>),
+            port = crawler.settings.get(<span class="hljs-string">&quot;REDIS_PORT&quot;</span>),
+        )
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_item</span><span class="hljs-params">(self, item, spider)</span>:</span>  
+        <span class="hljs-comment">#&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x5224;&#x65AD;url&#x5730;&#x5740;&#x662F;&#x5426;&#x6709;&#x6548;&#xFF0C;&#x5E76;&#x5199;&#x5165;redis&#x3002;</span>
+        bookid = re.findall(<span class="hljs-string">&quot;book.douban.com/subject/([0-9]+)/&quot;</span>,item[<span class="hljs-string">&apos;url&apos;</span>])
+        <span class="hljs-keyword">if</span> bookid:
+            <span class="hljs-keyword">if</span> self.r.sadd(<span class="hljs-string">&apos;books:id&apos;</span>,bookid[<span class="hljs-number">0</span>]):
+                self.r.lpush(<span class="hljs-string">&apos;bookspider:start_urls&apos;</span>, item[<span class="hljs-string">&apos;url&apos;</span>])
+        <span class="hljs-keyword">else</span>:
+            self.r.lpush(<span class="hljs-string">&apos;bookspider:no_urls&apos;</span>, item[<span class="hljs-string">&apos;url&apos;</span>])
+</code></pre>
+<ul>
+<li>&#x2465; &#x6D4B;&#x8BD5;&#x8FD0;&#x884C;&#xFF1A;</li>
+</ul>
+<pre><code>  scarpy crawl master_book
+</code></pre><h3 id="254-&#x6A21;&#x5757;3&#x7684;&#x5B9E;&#x73B0;&#xFF1A;">25.4 &#x6A21;&#x5757;3&#x7684;&#x5B9E;&#x73B0;&#xFF1A;</h3>
+<ul>
+<li><p>&#x8D1F;&#x8D23;&#x4ECE;Redis&#x4E2D;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x56FE;&#x4E66;&#x7684;url&#x5730;&#x5740;&#xFF0C;&#x5E76;&#x722C;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x4E66;&#x8BE6;&#x60C5;&#xFF0C;&#x5C06;&#x6BCF;&#x672C;&#x56FE;&#x4E66;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;&#x5199;&#x56DE;&#x5230;redis&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;</p>
+</li>
+<li><p>&#x2460; &#x9996;&#x5148;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x7F16;&#x5199;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#xFF0C;&#x521B;&#x5EFA;&#x9879;&#x76EE;salve(&#x4ECE;)&#x548C;&#x722C;&#x866B;&#x6587;&#x4EF6;</p>
+</li>
+</ul>
+<pre><code>scrapy startproject  salve
+
+cd salve
+
+scrapy genspider book book.douban.com
+</code></pre><ul>
+<li>&#x2461; &#x7F16;&#x8F91;<code>salve/item.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookItem</span><span class="hljs-params">(scrapy.Item)</span>:</span>
+    <span class="hljs-comment"># define the fields for your item here like:</span>
+    id = scrapy.Field()       <span class="hljs-comment">#ID&#x53F7;</span>
+    title = scrapy.Field()    <span class="hljs-comment">#&#x4E66;&#x540D;</span>
+    author = scrapy.Field()   <span class="hljs-comment">#&#x4F5C;&#x8005;</span>
+    press = scrapy.Field()    <span class="hljs-comment">#&#x51FA;&#x7248;&#x793E;</span>
+    original = scrapy.Field() <span class="hljs-comment">#&#x539F;&#x4F5C;&#x540D;</span>
+    translator = scrapy.Field()<span class="hljs-comment">#&#x8BD1;&#x8005;</span>
+    imprint = scrapy.Field()  <span class="hljs-comment">#&#x51FA;&#x7248;&#x5E74;</span>
+    pages = scrapy.Field()    <span class="hljs-comment">#&#x9875;&#x6570;</span>
+    price = scrapy.Field()    <span class="hljs-comment">#&#x5B9A;&#x4EF7;</span>
+    binding = scrapy.Field()  <span class="hljs-comment">#&#x88C5;&#x5E27;</span>
+    series = scrapy.Field()   <span class="hljs-comment">#&#x4E1B;&#x4E66;</span>
+    isbn = scrapy.Field()     <span class="hljs-comment">#ISBN</span>
+    score = scrapy.Field()    <span class="hljs-comment">#&#x8BC4;&#x5206;</span>
+    number = scrapy.Field()   <span class="hljs-comment">#&#x8BC4;&#x8BBA;&#x4EBA;&#x6570;</span>
+    <span class="hljs-comment">#pass</span>
+</code></pre>
+<ul>
+<li>&#x2462; &#x7F16;&#x8F91;<code>salve/settings.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python">BOT_NAME = <span class="hljs-string">&apos;slave&apos;</span>
+
+SPIDER_MODULES = [<span class="hljs-string">&apos;slave.spiders&apos;</span>]
+NEWSPIDER_MODULE = <span class="hljs-string">&apos;slave.spiders&apos;</span>
+
+
+<span class="hljs-comment"># Obey robots.txt rules</span>
+ROBOTSTXT_OBEY = <span class="hljs-keyword">False</span>
+
+...
+
+<span class="hljs-comment"># Override the default request headers:</span>
+DEFAULT_REQUEST_HEADERS = {
+<span class="hljs-comment">#   &apos;Accept&apos;: &apos;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&apos;,</span>
+<span class="hljs-comment">#   &apos;Accept-Language&apos;: &apos;en&apos;,</span>
+    <span class="hljs-string">&apos;User-Agent&apos;</span>: <span class="hljs-string">&apos;Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0&apos;</span>,
+}
+
+...
+
+ITEM_PIPELINES = {
+    <span class="hljs-comment">#&apos;slave.pipelines.SlavePipeline&apos;: 300,</span>
+    <span class="hljs-string">&apos;scrapy_redis.pipelines.RedisPipeline&apos;</span>: <span class="hljs-number">400</span>,
+}
+
+...
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x53BB;&#x91CD;</span>
+DUPEFILTER_CLASS = <span class="hljs-string">&apos;scrapy_redis.dupefilter.RFPDupeFilter&apos;</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x8C03;&#x5EA6;&#x5668;</span>
+SCHEDULER = <span class="hljs-string">&quot;scrapy_redis.scheduler.Scheduler&quot;</span>
+
+<span class="hljs-comment"># &#x5728;redis&#x4E2D;&#x4FDD;&#x6301;scrapy-redis&#x7528;&#x5230;&#x7684;&#x5404;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x6682;&#x505C;&#x548C;&#x6682;&#x505C;&#x540E;&#x6062;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x6E05;&#x7406;redis queues</span>
+SCHEDULER_PERSIST = <span class="hljs-keyword">True</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x722C;&#x53D6;&#x5730;&#x5740;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x961F;&#x5217;&#xFF0C;</span>
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x7684; &#x6309;&#x4F18;&#x5148;&#x7EA7;&#x6392;&#x5E8F;(Scrapy&#x9ED8;&#x8BA4;)&#xFF0C;&#x7531;sorted set&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x79CD;&#x975E;FIFO&#x3001;LIFO&#x65B9;&#x5F0F;&#x3002;</span>
+SCHEDULER_QUEUE_CLASS = <span class="hljs-string">&apos;scrapy_redis.queue.SpiderPriorityQueue&apos;</span>
+
+<span class="hljs-comment"># REDIS_URL = &apos;redis://localhost:6379&apos; # &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x7701;&#x53BB;</span>
+REDIS_HOST = <span class="hljs-string">&apos;localhost&apos;</span> <span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x6539;&#x6210; localhost</span>
+REDIS_PORT = <span class="hljs-number">6379</span>
+</code></pre>
+<ul>
+<li>&#x2463;  &#x7F16;&#x8F91;<code>salve/spiders/book.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy,re
+<span class="hljs-keyword">from</span> slave.items <span class="hljs-keyword">import</span> BookItem
+<span class="hljs-keyword">from</span> scrapy_redis.spiders <span class="hljs-keyword">import</span> RedisSpider
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BookSpider</span><span class="hljs-params">(RedisSpider)</span>:</span>
+    name = <span class="hljs-string">&apos;slave_book&apos;</span>
+    <span class="hljs-comment">#allowed_domains = [&apos;book.douban.com&apos;]</span>
+    <span class="hljs-comment">#start_urls = [&apos;http://book.douban.com/&apos;]</span>
+    redis_key = <span class="hljs-string">&quot;bookspider:start_urls&quot;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, *args, **kwargs)</span>:</span>
+        <span class="hljs-comment"># Dynamically define the allowed domains list.</span>
+        domain = kwargs.pop(<span class="hljs-string">&apos;domain&apos;</span>, <span class="hljs-string">&apos;&apos;</span>)
+        self.allowed_domains = filter(<span class="hljs-keyword">None</span>, domain.split(<span class="hljs-string">&apos;,&apos;</span>))
+        super(BookSpider, self).__init__(*args, **kwargs)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        print(<span class="hljs-string">&quot;======================&quot;</span>,response.status)
+        item = BookItem()
+        vo = response.css(<span class="hljs-string">&quot;#wrapper&quot;</span>)
+        item[<span class="hljs-string">&apos;id&apos;</span>] = vo.re_first(<span class="hljs-string">&apos;id=&quot;collect_form_([0-9]+)&quot;&apos;</span>) <span class="hljs-comment">#ID&#x53F7;</span>
+        item[<span class="hljs-string">&apos;title&apos;</span>] = vo.css(<span class="hljs-string">&quot;h1 span::text&quot;</span>).extract_first() <span class="hljs-comment">#&#x4E66;&#x540D;</span>
+
+        <span class="hljs-comment">#&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x83B7;&#x53D6;&#x91CC;&#x9762;&#x7684;info&#x91CC;&#x9762;&#x7684;&#x56FE;&#x4E66;&#x4FE1;&#x606F;</span>
+        info = vo.css(<span class="hljs-string">&quot;#info&quot;</span>).extract_first()
+        <span class="hljs-comment">#print(info)</span>
+        authors = re.search(<span class="hljs-string">&apos;&lt;span.*?&#x4F5C;&#x8005;.*?&lt;/span&gt;(.*?)&lt;br&gt;&apos;</span>,info,re.S).group(<span class="hljs-number">1</span>)
+        item[<span class="hljs-string">&apos;author&apos;</span>] = <span class="hljs-string">&quot;&#x3001;&quot;</span>.join(re.findall(<span class="hljs-string">&apos;&lt;a.*?&gt;(.*?)&lt;/a&gt;&apos;</span>,authors,re.S)) <span class="hljs-comment">#&#x4F5C;&#x8005;</span>
+        item[<span class="hljs-string">&apos;press&apos;</span>] = <span class="hljs-string">&quot; &quot;</span>.join(re.findall(<span class="hljs-string">&apos;&lt;span.*?&#x51FA;&#x7248;&#x793E;:&lt;/span&gt;\s*(.*?)&lt;br&gt;&apos;</span>,info)) <span class="hljs-comment">#&#x51FA;&#x7248;&#x793E;</span>
+        item[<span class="hljs-string">&apos;original&apos;</span>] = <span class="hljs-string">&quot; &quot;</span>.join(re.findall(<span class="hljs-string">&apos;&lt;span.*?&#x539F;&#x4F5C;&#x540D;:&lt;/span&gt;\s*(.*?)&lt;br&gt;&apos;</span>,info)) <span class="hljs-comment">#&#x539F;&#x4F5C;&#x540D;</span>
+        yz = re.search(<span class="hljs-string">&apos;&lt;span.*?&#x8BD1;&#x8005;.*?&lt;/span&gt;(.*?)&lt;br&gt;&apos;</span>,info,re.S)
+        <span class="hljs-keyword">if</span> yz:
+            item[<span class="hljs-string">&apos;translator&apos;</span>] = <span class="hljs-string">&quot;&#x3001;&quot;</span>.join(re.findall(<span class="hljs-string">&apos;&lt;a.*?&gt;(.*?)&lt;/a&gt;&apos;</span>,yz.group(<span class="hljs-number">1</span>),re.S)) <span class="hljs-comment">#&#x8BD1;&#x8005;</span>
+        <span class="hljs-keyword">else</span>:
+            item[<span class="hljs-string">&apos;translator&apos;</span>] = <span class="hljs-string">&quot;&quot;</span>
+        item[<span class="hljs-string">&apos;imprint&apos;</span>] = re.search(<span class="hljs-string">&apos;&lt;span.*?&#x51FA;&#x7248;&#x5E74;:&lt;/span&gt;\s*([0-9\-]+)&lt;br&gt;&apos;</span>,info).group(<span class="hljs-number">1</span>) <span class="hljs-comment">#&#x51FA;&#x7248;&#x5E74;</span>
+        item[<span class="hljs-string">&apos;pages&apos;</span>] = re.search(<span class="hljs-string">&apos;&lt;span.*?&#x9875;&#x6570;:&lt;/span&gt;\s*([0-9]+)&lt;br&gt;&apos;</span>,info).group(<span class="hljs-number">1</span>) <span class="hljs-comment">#&#x9875;&#x6570;</span>
+        item[<span class="hljs-string">&apos;price&apos;</span>] = re.search(<span class="hljs-string">&apos;&lt;span.*?&#x5B9A;&#x4EF7;:&lt;/span&gt;.*?([0-9\.]+)&#x5143;?&lt;br&gt;&apos;</span>,info).group(<span class="hljs-number">1</span>) <span class="hljs-comment">#&#x5B9A;&#x4EF7;</span>
+        item[<span class="hljs-string">&apos;binding&apos;</span>] = <span class="hljs-string">&quot; &quot;</span>.join(re.findall(<span class="hljs-string">&apos;&lt;span.*?&#x88C5;&#x5E27;:&lt;/span&gt;\s*(.*?)&lt;br&gt;&apos;</span>,info,re.S)) <span class="hljs-comment">#&#x88C5;&#x5E27;</span>
+        item[<span class="hljs-string">&apos;series&apos;</span>] = <span class="hljs-string">&quot; &quot;</span>.join(re.findall(<span class="hljs-string">&apos;&lt;span.*?&#x4E1B;&#x4E66;:&lt;/span&gt;.*?&lt;a .*?&gt;(.*?)&lt;/a&gt;&lt;br&gt;&apos;</span>,info,re.S)) <span class="hljs-comment">#&#x4E1B;&#x4E66;</span>
+        item[<span class="hljs-string">&apos;isbn&apos;</span>] = re.search(<span class="hljs-string">&apos;&lt;span.*?ISBN:&lt;/span&gt;\s*([0-9]+)&lt;br&gt;&apos;</span>,info).group(<span class="hljs-number">1</span>) <span class="hljs-comment">#ISBN</span>
+
+        item[<span class="hljs-string">&apos;score&apos;</span>] = vo.css(<span class="hljs-string">&quot;strong.rating_num::text&quot;</span>).extract_first().strip() <span class="hljs-comment">#&#x8BC4;&#x5206;</span>
+        item[<span class="hljs-string">&apos;number&apos;</span>] = vo.css(<span class="hljs-string">&quot;a.rating_people span::text&quot;</span>).extract_first() <span class="hljs-comment">#&#x8BC4;&#x8BBA;&#x4EBA;&#x6570;</span>
+        <span class="hljs-comment">#print(item)</span>
+        <span class="hljs-keyword">yield</span> item
+</code></pre>
+<ul>
+<li>&#x2464; &#x7F16;&#x8F91;<code>salve/pipelines.py</code> &#x6587;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SlavePipeline</span><span class="hljs-params">(object)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_item</span><span class="hljs-params">(self, item, spider)</span>:</span>
+        <span class="hljs-keyword">return</span> item
+</code></pre>
+<ul>
+<li>&#x2465; &#x6D4B;&#x8BD5;&#x8FD0;&#x884C;</li>
+</ul>
+<pre><code># &#x5728;spider&#x76EE;&#x5F55;&#x4E0B;&#x548C;book.py&#x5728;&#x4E00;&#x8D77;&#x3002;
+scrapy runspider book.py
+</code></pre><h3 id="255-&#x6A21;&#x5757;4&#x7684;&#x5B9E;&#x73B0;&#xFF1A;">25.5 &#x6A21;&#x5757;4&#x7684;&#x5B9E;&#x73B0;&#xFF1A;</h3>
+<ul>
+<li><p>&#x8D1F;&#x8D23;&#x4ECE;Redis&#x4E2D;&#x83B7;&#x53D6;&#x6BCF;&#x672C;&#x56FE;&#x4E66;&#x7684;&#x8BE6;&#x60C5;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5C06;&#x4FE1;&#x606F;&#x4F9D;&#x6B21;&#x5199;&#x5165;&#x5230;MySQL&#x6570;&#x636E;&#x4E2D;&#xFF0C;&#x4F5C;&#x4E3A;&#x6700;&#x7EC8;&#x7684;&#x722C;&#x53D6;&#x4FE1;&#x606F;&#x3002;</p>
+</li>
+<li><p>&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#xFF1A;item_save.py&#x7684;&#x72EC;&#x7ACB;&#x722C;&#x866B;&#x6587;&#x4EF6;</p>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment">#&#x5C06;Redis&#x4E2D;&#x7684;Item&#x4FE1;&#x606F;&#x904D;&#x5386;&#x5199;&#x5165;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;</span>
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> redis
+<span class="hljs-keyword">import</span> pymysql
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+
+    <span class="hljs-comment"># &#x6307;&#x5B9A;Redis&#x6570;&#x636E;&#x5E93;&#x4FE1;&#x606F;</span>
+    rediscli = redis.StrictRedis(host=<span class="hljs-string">&apos;127.0.0.1&apos;</span>, port=<span class="hljs-number">6379</span>, db=<span class="hljs-number">0</span>)
+
+    <span class="hljs-comment"># &#x6307;&#x5B9A;MySQL&#x6570;&#x636E;&#x5E93;&#x4FE1;&#x606F;</span>
+    db = pymysql.connect(host=<span class="hljs-string">&quot;localhost&quot;</span>,user=<span class="hljs-string">&quot;root&quot;</span>,password=<span class="hljs-string">&quot;&quot;</span>,db=<span class="hljs-string">&quot;doubandb&quot;</span>,charset=<span class="hljs-string">&quot;utf8&quot;</span>)
+    <span class="hljs-comment">#&#x4F7F;&#x7528;cursor()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6E38;&#x6807;&#x5BF9;&#x8C61;cursor</span>
+    cursor = db.cursor()
+
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        <span class="hljs-comment"># FIFO&#x6A21;&#x5F0F;&#x4E3A; blpop&#xFF0C;LIFO&#x6A21;&#x5F0F;&#x4E3A; brpop&#xFF0C;&#x83B7;&#x53D6;&#x952E;&#x503C;</span>
+        source, data = rediscli.blpop([<span class="hljs-string">&quot;book:items&quot;</span>])
+        print(source)
+        <span class="hljs-keyword">try</span>:
+            item = json.loads(data)
+            <span class="hljs-comment">#&#x7EC4;&#x88C5;sql&#x8BED;&#x53E5;</span>
+            dd = dict(item)
+            keys = <span class="hljs-string">&apos;,&apos;</span>.join(dd.keys())
+            values=<span class="hljs-string">&apos;,&apos;</span>.join([<span class="hljs-string">&apos;%s&apos;</span>]*len(dd))
+            sql = <span class="hljs-string">&quot;insert into books(%s) values(%s)&quot;</span>%(keys,values)
+            <span class="hljs-comment">#&#x6307;&#x5B9A;&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x6267;&#x884C;sql&#x6DFB;&#x52A0;</span>
+            cursor.execute(sql,tuple(dd.values()))
+            <span class="hljs-comment">#&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;</span>
+            db.commit()
+            print(<span class="hljs-string">&quot;&#x5199;&#x5165;&#x4FE1;&#x606F;&#x6210;&#x529F;&#xFF1A;&quot;</span>,dd[<span class="hljs-string">&apos;id&apos;</span>])
+        <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> err:
+            <span class="hljs-comment">#&#x4E8B;&#x52A1;&#x56DE;&#x6EDA;</span>
+            db.rollback()
+            print(<span class="hljs-string">&quot;SQL&#x6267;&#x884C;&#x9519;&#x8BEF;&#xFF0C;&#x539F;&#x56E0;&#xFF1A;&quot;</span>,err)
+
+<span class="hljs-comment">#&#x4E3B;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    main()
+</code></pre>
+<ul>
+<li>&#x4F7F;&#x7528;python&#x547D;&#x4EE4;&#x6D4B;&#x8BD5;&#x5373;&#x53EF;</li>
+</ul>
+<h3 id="256-&#x53CD;&#x722C;&#x5904;&#x7406;&#xFF1A;">25.6 &#x53CD;&#x722C;&#x5904;&#x7406;&#xFF1A;</h3>
+<ul>
+<li>&#x964D;&#x4F4E;&#x722C;&#x53D6;&#x9891;&#x7387;</li>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x4F2A;&#x88C5;</li>
+<li>IP&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x7684;&#x4F7F;&#x7528;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.html" class="navigation navigation-prev " aria-label="Previous page: 24. 爬虫项目架构设计">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="9.html" class="navigation navigation-next " aria-label="Next page: 26. 使用web展示爬取信息">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"25. 爬虫项目的代码实现","level":"1.5.8","depth":2,"next":{"title":"26. 使用web展示爬取信息","level":"1.5.9","depth":2,"path":"week03/9.md","ref":"week03/9.md","articles":[]},"previous":{"title":"24. 爬虫项目架构设计","level":"1.5.7","depth":2,"path":"week03/7.md","ref":"week03/7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week03/8.md","mtime":"2018-06-27T01:42:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-27T05:26:42.551Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

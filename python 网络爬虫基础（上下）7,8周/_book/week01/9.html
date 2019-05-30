@@ -1,0 +1,747 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>9. 网络爬虫中的异常处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10.html" />
+    
+    
+    <link rel="prev" href="8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    一、Python网络爬虫基础(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1. Python中的正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2. 正则表达式基础语法介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3. 正则表达式中的常用函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4. 正则表达式的案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5. 网络爬虫概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6. 网络爬虫工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7. 网络爬虫基础使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8. 网络爬虫实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    9. 网络爬虫中的异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    10. Urllib3和requests的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    11. GET请求爬取数据实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="12.html">
+            
+                <a href="12.html">
+            
+                    
+                    12. POST请求爬取数据实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="13a.html">
+            
+                <a href="13a.html">
+            
+                    
+                    13. 网络爬虫案例实战1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="13b.html">
+            
+                <a href="13b.html">
+            
+                    
+                    13. 网络爬虫案例实战2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="14.html">
+            
+                <a href="14.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    二、Python网络爬虫基础(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/1.html">
+            
+                <a href="../week02/1.html">
+            
+                    
+                    14. 解析库的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../week02/1.1.html">
+            
+                <a href="../week02/1.1.html">
+            
+                    
+                    a. XPath的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../week02/1.2.html">
+            
+                <a href="../week02/1.2.html">
+            
+                    
+                    b. Beautiful Soup的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../week02/1.3.html">
+            
+                <a href="../week02/1.3.html">
+            
+                    
+                    c. pyquery的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/2.html">
+            
+                <a href="../week02/2.html">
+            
+                    
+                    15. 豆瓣电影Top250信息爬取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/3.html">
+            
+                <a href="../week02/3.html">
+            
+                    
+                    16. 图片信息爬取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/4.html">
+            
+                <a href="../week02/4.html">
+            
+                    
+                    17. Fiddler抓包工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/5.html">
+            
+                <a href="../week02/5.html">
+            
+                    
+                    18. 浏览器伪装技术实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../week02/6.html">
+            
+                <a href="../week02/6.html">
+            
+                    
+                    19. Ajax信息爬取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../week02/7.html">
+            
+                <a href="../week02/7.html">
+            
+                    
+                    20. 验证码信息识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../week02/8.html">
+            
+                <a href="../week02/8.html">
+            
+                    
+                    21. 网络爬虫阶段案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../week02/9.html">
+            
+                <a href="../week02/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >9. 网络爬虫中的异常处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="9-&#x7F51;&#x7EDC;&#x722C;&#x866B;&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;">9. &#x7F51;&#x7EDC;&#x722C;&#x866B;&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;</h1>
+<ul>
+<li><p>&#x5728;&#x7F51;&#x7EDC;&#x722C;&#x866B;&#x8FD0;&#x884C;&#x65F6;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x82E5;&#x4E0D;&#x5904;&#x7406;&#x5219;&#x4F1A;&#x56E0;&#x62A5;&#x9519;&#x800C;&#x7EC8;&#x6B62;&#x8FD0;&#x884C;&#xFF0C;&#x5BFC;&#x81F4;&#x722C;&#x53D6;&#x6570;&#x636E;&#x4E2D;&#x65AD;&#xFF0C;&#x6240;&#x4EE5;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x8FD8;&#x662F;&#x5341;&#x5206;&#x91CD;&#x8981;&#x7684;&#x3002;</p>
+</li>
+<li><p><code>urllib.error</code>&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x6709;<code>urllib.request</code>&#x4EA7;&#x751F;&#x7684;&#x5F02;&#x5E38;&#x3002;<code>urllib.error</code>&#x6709;&#x4E24;&#x4E2A;&#x7C7B;&#xFF0C;<code>URLError</code>&#x548C;<code>HTTPError</code>&#x3002;</p>
+</li>
+<li><p><code>URLError</code>&#x5185;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;<code>reason</code> &#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x7684;&#x539F;&#x56E0;</p>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6D4B;&#x8BD5;URLError&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;</span>
+<span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> request
+<span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> error
+
+url = <span class="hljs-string">&quot;http://www.wer3214e13wer3.com/&quot;</span>
+req = request.Request(url)
+<span class="hljs-keyword">try</span>:
+    response = request.urlopen(req)
+    html = response.read().decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+    print(len(html))
+<span class="hljs-keyword">except</span> error.URLError <span class="hljs-keyword">as</span> e:
+    print(e.reason) <span class="hljs-comment">#&#x8F93;&#x51FA;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</span>
+
+print(<span class="hljs-string">&quot;ok&quot;</span>)
+</code></pre>
+<ul>
+<li>&#x62A5;&#x9519;&#x4FE1;&#x606F;&#xFF0C;&#x4F46;&#x7A0B;&#x5E8F;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF1A;</li>
+</ul>
+<pre><code>[Errno 8] nodename nor servname provided, or not known
+ok
+</code></pre><ul>
+<li><code>HTTPError</code>&#x5185;&#x6709;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#xFF1A;<code>code</code> &#x8FD4;&#x56DE;HTTP&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x5982;404 &#xFF1B; <code>reason</code> &#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x539F;&#x56E0;&#xFF1B; <code>headers</code> &#x8FD4;&#x56DE;&#x8BF7;&#x6C42;&#x5934;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6D4B;&#x8BD5;HTTPError&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;</span>
+<span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> request
+<span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> error
+
+url = <span class="hljs-string">&quot;https://img-ads.csdn.net/2018/20180420184005werqwefsd9410.png&quot;</span>
+req = request.Request(url)
+<span class="hljs-keyword">try</span>:
+    response = request.urlopen(req)
+    html = response.read().decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+    print(len(html))
+<span class="hljs-keyword">except</span> error.HTTPError <span class="hljs-keyword">as</span> e:
+    print(e.reason) <span class="hljs-comment">#&#x8F93;&#x51FA;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</span>
+    print(e.code)    <span class="hljs-comment">#&#x8F93;&#x51FA;HTTP&#x72B6;&#x6001;&#x7801;</span>
+
+print(<span class="hljs-string">&quot;ok&quot;</span>)
+</code></pre>
+<ul>
+<li>&#x62A5;&#x7684;&#x9519;&#x8BEF;</li>
+</ul>
+<pre><code>Not Found
+404
+ok
+</code></pre><ul>
+<li><p><code>URLError</code>&#x662F;<code>OSError</code>&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#xFF0C;<code>HTTPError</code>&#x662F;<code>URLError</code>&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;:</p>
+</li>
+<li><p>&#x6CE8;&#x610F;&#xFF1A;&#x7236;&#x7C7B;&#x4E00;&#x5B9A;&#x8981;&#x5728;&#x540E;&#x9762;&#xFF1A;</p>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> request
+<span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> error
+
+<span class="hljs-comment">#url = &quot;https://img-ads.csdn.net/2018/20180420184005werqwefsd9410.png&quot;</span>
+url = <span class="hljs-string">&quot;http://www.wer3214e13wer3.com/&quot;</span>
+req = request.Request(url)
+<span class="hljs-keyword">try</span>:
+    response = request.urlopen(req)
+    html = response.read().decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+    print(len(html))
+<span class="hljs-keyword">except</span> error.HTTPError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">&quot;HTTPError&quot;</span>)
+    print(e.reason)
+    print(e.code)
+<span class="hljs-keyword">except</span> error.URLError <span class="hljs-keyword">as</span> e:
+    print(<span class="hljs-string">&quot;URLError&quot;</span>)
+    print(e.reason) <span class="hljs-comment"># &#x8F93;&#x51FA;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</span>
+
+print(<span class="hljs-string">&quot;ok&quot;</span>)
+</code></pre>
+<ul>
+<li>&#x4E0D;&#x4EC0;&#x4E48;&#x9519;&#x8BEF;&#x90FD;&#x53BB;&#x5904;&#x7406;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> request
+<span class="hljs-keyword">from</span> urllib <span class="hljs-keyword">import</span> error
+
+url = <span class="hljs-string">&quot;https://img-ads.csdn.net/2018/20180420184005werqwefsd9410.png&quot;</span>
+<span class="hljs-comment">#url = &quot;http://www.wer3214e13wer3.com/&quot;</span>
+req = request.Request(url)
+<span class="hljs-keyword">try</span>:
+    response = request.urlopen(req)
+    html = response.read().decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+    print(len(html))
+<span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> e:
+    <span class="hljs-keyword">if</span> hasattr(e,<span class="hljs-string">&apos;reason&apos;</span>):
+        print(e.reason)
+
+    <span class="hljs-keyword">if</span> hasattr(e,<span class="hljs-string">&apos;code&apos;</span>):
+        print(e.code)
+
+print(<span class="hljs-string">&quot;ok&quot;</span>)
+</code></pre>
+<pre><code>Not Found
+404
+ok
+zhang
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8.html" class="navigation navigation-prev " aria-label="Previous page: 8. 网络爬虫实战">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10.html" class="navigation navigation-next " aria-label="Next page: 10. Urllib3和requests的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9. 网络爬虫中的异常处理","level":"1.3.9","depth":2,"next":{"title":"10. Urllib3和requests的使用","level":"1.3.10","depth":2,"path":"week01/10.md","ref":"week01/10.md","articles":[]},"previous":{"title":"8. 网络爬虫实战","level":"1.3.8","depth":2,"path":"week01/8.md","ref":"week01/8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week01/9.md","mtime":"2018-04-23T12:18:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-10T07:04:13.061Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
